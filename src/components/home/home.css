@@ -1,0 +1,132 @@
+
+/* body {
+    background-image: none;
+} */
+
+.rewards-portal {
+    color: #2F2D2E;
+    font-family: CircularStd;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    line-height: 29px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.rewards-logo {
+    height:20px;
+    width: auto;
+}
+
+
+.main {
+    margin-top: 50px;
+    margin-left: 250px;
+    /* margin-right: 50px */
+}
+
+.main-top {
+    display: grid;
+    margin-bottom: 20px;
+    /* margin-right:50px; */
+}
+
+.dashboard{
+    color: #4A4A4A;
+    font-family: CircularStd;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    grid-column: 1;
+}
+
+.search {
+    grid-column: 10;
+}
+
+.main-top input[type=text] {
+    border: 0.5px solid #C0C0C0;
+    border-radius: 5px;
+    width: auto;
+    height: 30px;
+    padding-left: 6px;
+}
+
+.main-below {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    margin-right: 50px;
+}
+
+.section-1 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 2fr;
+    /* width: 100%;
+    height: auto; */
+}
+
+.customers, .redemption-value, .points-redeemed, .cash-spend{
+    background-color: #FFFFFF;
+    border: 0.5px solid #D6D6D6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    /* width: 100%;
+    height: 100%; */
+}
+
+.summary {
+    border: 0.5px solid #979797;
+    opacity: 0.6111865942028986;
+    width: 100%;
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.customers {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.redemption-value {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.points-redeemed {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 9;
+}
+
+.cash-spend {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 9;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar-nav {padding-top: 15px;}
+    .sidebar-link {font-size: 18px;}
+}
+
+/* @media screen and (max-height: 600px) {
+    .main-top .search {
+        float: none;
+    }
+
+    .main-top input[type=text] {
+        border: 1px solid #ccc;
+    }
+} */

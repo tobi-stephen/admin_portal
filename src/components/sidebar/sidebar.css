@@ -1,0 +1,53 @@
+.sidebar-nav {
+    background-color: #2F2D2E;
+    background-size: cover;
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    z-index: auto;
+    overflow-x: hidden;
+}
+
+.uba-logo {
+    width: 90px;
+    height: 42px;
+    
+}
+
+.sidebar-link, .sub-sidebar-link {
+    color: #C0C0C0;
+    font-family: CircularStd;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: -0.25px;
+    line-height: 17px;
+    text-emphasis: after 1px; 
+    text-align: left;
+    text-decoration-line: none;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    z-index: 1;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sidebar-link span:hover {
+    color: #FFFFFF
+}
+
+.sub-sidebar-link span:hover {
+    color: #FFFFFF
+}
