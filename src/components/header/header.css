@@ -1,0 +1,15 @@
+.rewards-portal {
+    color: #2F2D2E;
+    font-family: CircularStd;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    line-height: 29px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.rewards-logo {
+    height:20px;
+    width: auto;
+}

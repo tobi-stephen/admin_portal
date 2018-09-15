@@ -1,0 +1,31 @@
+.settings-title {
+    display: block;
+    padding: 20px;
+}
+
+.settings-content div, .settings-title div {
+    color: #4A4A4A;
+    font-family: CircularStd;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    line-height: 17px;
+    text-emphasis: after 1px; 
+    text-align: left;
+    display: inline-block;
+    min-width: 180px;
+}
+
+.settings-content {
+    display: block;
+    grid-gap: 20px;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    border: 0.5px solid rgba(151, 151, 151, 0.6);
+}
+
+.settings-content div {
+    font-size: 13px;
+    font-weight: 500;
+}
+

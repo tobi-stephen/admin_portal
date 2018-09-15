@@ -1,0 +1,7 @@
+.users-content div, .users-title div {
+    min-width: 150px;
+}
+
+.users-content {
+    margin-bottom: 5px;
+}

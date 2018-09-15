@@ -14,8 +14,8 @@ const Sidebar = ()=> {
                 </div>
                 <div style={styles.sideDivLink} className="dropdown">
                     <Link className="sidebar-link" to={"#"}><span>User Management</span></Link>
-                    <div className="dropdown-content"><Link className="sub-sidebar-link" to={"#"}><span>Users</span></Link></div>
-                    <div className="dropdown-content"><Link className="sub-sidebar-link" to={"#"}><span>Admin Users</span></Link></div>
+                    <div className="dropdown-content"><Link className="sub-sidebar-link" to={"/users"}><span>Users</span></Link></div>
+                    <div className="dropdown-content"><Link className="sub-sidebar-link" to={"/admin_users"}><span>Admin Users</span></Link></div>
                 </div>
                 <br/>
                 <div style={styles.sideDivLink} className="dropdown">

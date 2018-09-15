@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import './home.css';
-import rewards from '../../assets/rewards-logo.png';
 import Sidebar from '../sidebar/sidebar';
+import Header from '../header/header';
 
 class Home extends Component{
     render(){
         return(
             <div>
-                <div className="rewards-portal"><img alt="Rewards Portal" src={rewards} className="rewards-logo"/></div>
-                <Sidebar/>
+                <Header />
+                <Sidebar />
                 <div className="main">
                     <div className="main-top">
-                        <div className="dashboard">Dashboard</div>
+                        <div className="heading">Dashboard</div>
                         <div className="search">
                             <form onSubmit={null}>
                                 <input type="text" placeHolder="Search" />
-                                <button type="submit" style={styles.searchButton}><i className="fa fa-search"></i></button>
+                                <button type="submit" className="search-button"><i className="fa fa-search"></i></button>
                             </form>
                         </div>
                     </div>
@@ -32,12 +32,6 @@ class Home extends Component{
             </div>
         )
     }
-}
-
-const styles = {
-    sideDiv: { marginTop: "100px", marginLeft: "20px" },
-    sideDivLink: { marginBottom: "20px"},
-    searchButton: { height: "30px", borderRadius: "5px",}
 }
 
 export default Home;

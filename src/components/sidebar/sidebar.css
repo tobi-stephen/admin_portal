@@ -1,12 +1,18 @@
+* {
+    box-sizing: content-box;
+}
+
 .sidebar-nav {
     background-color: #2F2D2E;
     background-size: cover;
     width: 220px;
     height: 100%;
-    position: fixed;
+    left: 0;
     z-index: auto;
+    position: fixed;
     overflow-x: hidden;
 }
+
 
 .uba-logo {
     width: 90px;
@@ -50,4 +56,9 @@
 
 .sub-sidebar-link span:hover {
     color: #FFFFFF
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar-nav {padding-top: 15px;}
+    .sidebar-link {font-size: 18px;}
 }

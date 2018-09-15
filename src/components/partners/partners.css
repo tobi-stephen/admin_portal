@@ -1,0 +1,39 @@
+.merchant-top, .no-partner{
+    color: #C0C0C0;
+    font-family: CircularStd;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.25px;
+    line-height: 17px;
+    text-emphasis: after 1px; 
+    text-align: left;
+    display: block;
+}
+
+.partners {
+    position: relative;
+}
+
+.create-1 {
+    color: red;
+}
+
+.no-partner, .yes-partner{
+    color: #4A4A4A;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    border: 0.5px dotted rgba(151, 151, 151, 0.6);
+    margin-top: 50%;
+    margin-left: 50%;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    background-size: inherit;
+}
+
+@media screen and (max-width: 800px) {
+    .no-partner {
+        margin-left: 0%;
+        width: auto;
+    }
+}

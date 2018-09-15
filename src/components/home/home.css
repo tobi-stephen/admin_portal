@@ -1,38 +1,15 @@
-
-/* body {
-    background-image: none;
-} */
-
-.rewards-portal {
-    color: #2F2D2E;
-    font-family: CircularStd;
-    font-size: 24px;
-    font-weight: 900;
-    letter-spacing: -0.5px;
-    line-height: 29px;
-    text-align: left;
-    margin-left: 20px;
-}
-
-.rewards-logo {
-    height:20px;
-    width: auto;
-}
-
-
 .main {
-    margin-top: 50px;
-    margin-left: 250px;
-    /* margin-right: 50px */
+    padding-top: 50px;
+    margin-left: 300px;
+    margin-right:50px;
+    position: relative;
 }
 
 .main-top {
     display: grid;
-    margin-bottom: 20px;
-    /* margin-right:50px; */
 }
 
-.dashboard{
+.heading{
     color: #4A4A4A;
     font-family: CircularStd;
     font-size: 20px;
@@ -40,10 +17,16 @@
     line-height: 24px;
     text-align: left;
     grid-column: 1;
+    margin-bottom: 30px;
 }
 
 .search {
     grid-column: 10;
+}
+
+.search-button { 
+    height: 30px;
+    border-radius: 5px;
 }
 
 .main-top input[type=text] {
@@ -65,16 +48,15 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 2fr;
-    /* width: 100%;
-    height: auto; */
+    width: 100%;
+    height: auto;
 }
 
 .customers, .redemption-value, .points-redeemed, .cash-spend{
     background-color: #FFFFFF;
     border: 0.5px solid #D6D6D6;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    /* width: 100%;
-    height: 100%; */
+
 }
 
 .summary {
@@ -116,12 +98,9 @@
     grid-row-end: 9;
 }
 
-@media screen and (max-height: 450px) {
-    .sidebar-nav {padding-top: 15px;}
-    .sidebar-link {font-size: 18px;}
-}
 
-/* @media screen and (max-height: 600px) {
+
+@media screen and (max-height: 600px) {
     .main-top .search {
         float: none;
     }
@@ -129,4 +108,11 @@
     .main-top input[type=text] {
         border: 1px solid #ccc;
     }
-} */
+}
+
+
+@media screen and (max-width: 650px) {
+    .main {
+        position: fixed;
+    }
+}
