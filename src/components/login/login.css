@@ -1,5 +1,5 @@
-login-bg {
-    background-image: url("./bg.jpg");
+#roo {
+    background-image: url("../../assets/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -11,20 +11,16 @@ login-bg {
     border: 0.5px solid rgba(151, 151, 151, 0.6);
     margin-left: 39%;
     margin-right: 39%;
-    margin-top: 19%;
-    margin-bottom: 20%;
+    margin-top: 10%;
     border-radius: 5px;
-    min-width: fit-content;
+    min-width: 20%;
     height: auto;
     background-size: inherit;
-    
+    position: absolute;
 }
 
 .login-form {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 20px;
     display: grid;
 }
 
@@ -72,7 +68,7 @@ login-bg {
     margin-bottom: 3%;
 }
 
-.forgot-your-password {
+.forgot-password {
     color: #9B9B9B;
     font-family: CircularStd;
     font-size: 10px;
@@ -81,12 +77,14 @@ login-bg {
     text-align: left;
     margin-top: 1%;
     margin-bottom: 3%;
+    width: fit-content;
 }
 
 .login-button {
     background-color: #C82B1D;
-    width: 100%;
+    width: auto;
     height: 45px;
+    
 }
 
 .login-text {

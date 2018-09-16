@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './login.css';
-import logo from './logo.png';
+import logo from '../../assets/logo.png';
 
 class Login extends Component{
 
@@ -19,7 +19,7 @@ class Login extends Component{
                         <input className="login-input"></input>
                         <span className="login-password">Password</span>
                         <input className="login-input" type={"password"}></input>
-                        <Link to={"/"} className="forgot-your-password">Forgot Your Password</Link>
+                        <Link to={"/"} className="forgot-password">Forgot Your Password</Link>
                         <input type="submit" className="login-button login-text" value="Login"></input>
                         <div className="no-account">Don't have an account?</div>
                         <button className="request-access-button"><span className="request-access-text">Request for Access</span></button>
