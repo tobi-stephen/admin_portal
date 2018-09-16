@@ -1,31 +1,32 @@
 import React, { Component } from 'react';
 import Sidebar from '../sidebar/sidebar';
 import Header from '../header/header';
-import './users.css';
 
-class AdminUser extends Component {
+class PortalReport extends Component {
 
-    constructor(){
+    constructor() {
         super();
-        this.listAdminUsers = this.listAdminUsers.bind(this);
+        this.listUsers = this.listUsers.bind(this);
     }
 
-    listAdminUsers = () => {
+    listUsers = () => {
         let userList = [];
         for (let i = 0; i < 15; i++){
             userList.push(
                 <div className="settings-content users-content">
+                    <div>10</div>
+                    <div>Remilekun</div>
+                    <div>Remilekun</div>
                     <div>abcdefg@yahoo.com</div>
-                    <div>Super Admin</div>
-                    <div>{(new Date()).toLocaleString()}</div>
-                    <div>{(new Date("October 21 2017")).toLocaleDateString()}</div>
-                    <div>Online</div>
+                    <div>09023445543</div>
+                    <div>{new Date("October 21 2017").toLocaleDateString()}</div>
                 </div>
             )
         }
 
         return userList;
     }
+
     render() {
         return(
             <div>
@@ -33,11 +34,10 @@ class AdminUser extends Component {
                 <Sidebar />
                 <div  className="main">
                     <div className="main-top">
-                        <div className="heading">Admin User</div>
+                        <div className="heading">{"Registered Customers"}</div>
                         <div className="date-section">
                             Time
                         </div>
-                        <div className="new-admin">New Admin User</div>
                         <div className="search">
                             <form onSubmit={null}>
                                 <input type="text" placeHolder="Search" />
@@ -47,19 +47,21 @@ class AdminUser extends Component {
                     </div>
                     <div style={{ marginRight: "10px" }}>
                         <div className="settings-title users-title">
+                            <div>ID</div>
+                            <div>First Name</div>
+                            <div>Last Name</div>
                             <div>Email</div>
-                            <div>Role</div>
-                            <div>Current Sign In</div>
-                            <div>Last Sign At</div>
-                            <div>Status</div>
+                            <div>Phone</div>
+                            <div>Last Login Date</div>
                         </div>
-                        {this.listAdminUsers()}
+                        {this.listUsers()}
                         
                     </div>
                 </div>
+                
             </div>
         )
     }
 }
 
-export default AdminUser;
+export default PortalReport;

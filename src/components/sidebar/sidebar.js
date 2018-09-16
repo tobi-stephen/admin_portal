@@ -20,9 +20,9 @@ const Sidebar = ()=> {
                 <br/>
                 <div style={styles.sideDivLink} className="dropdown">
                     <Link className="sidebar-link" to={"#"}><span>Reporting</span></Link>
-                    <div className="dropdown-content"><Link className="sub-sidebar-link" to={"#"}><span>Portal Report</span></Link></div>
-                    <div className="dropdown-content"><Link className="sub-sidebar-link" to={"#"}><span>Redemption Report</span></Link></div>
-                    <div className="dropdown-content"><Link className="sub-sidebar-link" to={"#"}><span>BI</span></Link></div>
+                    <div className="dropdown-content"><Link className="sub-sidebar-link" to={"/portal_report"}><span>Portal Report</span></Link></div>
+                    <div className="dropdown-content"><Link className="sub-sidebar-link" to={"/redemption_report"}><span>Redemption Report</span></Link></div>
+                    <div className="dropdown-content"><Link className="sub-sidebar-link" to={"/bi_report"}><span>BI</span></Link></div>
                 </div>
                 <div style={styles.sideDivLink}><Link className="sidebar-link" to={"/settings"}><span>System Settings</span></Link></div>
                 <div style={{ height:"150px" }}></div>

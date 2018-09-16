@@ -12,6 +12,7 @@ class Home extends Component{
                 <div className="main">
                     <div className="main-top">
                         <div className="heading">Dashboard</div>
+                        <div className="date-section">Time</div>
                         <div className="search">
                             <form onSubmit={null}>
                                 <input type="text" placeHolder="Search" />

@@ -10,6 +10,9 @@ import CreatePartners from './components/partners/create_partner';
 import Settings from './components/settings/settings';
 import Users from './components/users/users';
 import Admin from './components/users/users_admin';
+import PortalReport from './components/report/portal_report';
+import RedemptionReport from './components/report/redemption_report';
+import BIReport from './components/report/bi_report';
 
 const App = () => {
     return(
@@ -23,6 +26,9 @@ const App = () => {
                 <Route path="/settings" component={Settings}></Route>
                 <Route path="/users" component={Users}></Route>
                 <Route path="/admin_users" component={Admin}></Route>
+                <Route path="/portal_report" component={PortalReport}></Route>
+                <Route path="/redemption_report" component={RedemptionReport}></Route>
+                <Route path="/BI_report" component={BIReport}></Route>
             </Switch>
         </BrowserRouter>
     )
