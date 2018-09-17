@@ -15,13 +15,13 @@ class Home extends Component{
                         <div className="date-section">Time</div>
                         <div className="search">
                             <form onSubmit={null}>
-                                <input type="text" placeHolder="Search" />
+                                <input type="text" placeholder="Search" />
                                 <button type="submit" className="search-button"><i className="fa fa-search"></i></button>
                             </form>
                         </div>
                     </div>
                     <div className="main-below">
-                        <div class="section-1">
+                        <div className="section-1">
                             <div className="customers">Registered Customers</div>
                             <div className="redemption-value">Value of Redemption</div>
                             <div className="points-redeemed">Points Redeemed</div>

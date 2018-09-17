@@ -46,10 +46,6 @@
     margin-top: 10px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .sidebar-link span:hover {
     color: #FFFFFF
 }
