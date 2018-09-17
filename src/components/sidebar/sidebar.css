@@ -39,11 +39,15 @@
 }
 
 .dropdown-content {
-    display: none;
     position: relative;
     z-index: 1;
     margin-left: 30px;
     margin-top: 10px;
+    display: none;
+}
+
+.show, .dropdown:hover  {
+    display: block;
 }
 
 .sidebar-link span:hover {
