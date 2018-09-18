@@ -21,27 +21,38 @@
 }
 
 .date-section {
-    border: 0.5px solid #C0C0C0;
-    background: #979797;
+    border: 0.5px solid #ECECEC;
     border-radius: 10px;
     height:15px;
     padding-left: 5px;
     font-size: 12px;
+    color: #4A4A4A;
 }
+
 .search {
     grid-column: 10;
+    position: relative;
 }
 
 .search-button { 
     border-radius: 5px;
 }
 
-.main-top input[type=text] {
+.search input[type=search] {
     border: 0.5px solid #C0C0C0;
     border-radius: 5px;
     width: auto;
     height: 30px;
-    padding-left: 6px;
+    text-indent: 32px;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #FFFFFF;
+    height: fit-content;
+    width: auto;
 }
 
 .main-below {
@@ -119,7 +130,7 @@
 
 
 @media screen and (max-width: 650px) {
-    .main {
+    /* .main {
         position: fixed;
-    }
+    } */
 }

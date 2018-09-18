@@ -14,7 +14,7 @@ class AdminUser extends Component {
         let userList = [];
         for (let i = 0; i < 15; i++){
             userList.push(
-                <div className="settings-content users-content">
+                <div className="settings-content admin-user">
                     <div>abcdefg@yahoo.com</div>
                     <div>Super Admin</div>
                     <div>{(new Date()).toLocaleString()}</div>
@@ -34,19 +34,24 @@ class AdminUser extends Component {
                 <div  className="main">
                     <div className="main-top">
                         <div className="heading">Admin User</div>
-                        <div className="date-section">
-                            Time
+                        <div >
+                            <select className="date-section">
+                                <option value="1">Today</option>
+                                <option value="2">Yesterday</option>
+                                <option value="3">Last 7 Days</option>
+                                <option value="4">Last 30 Days</option>
+                                <option value="5">This Month</option>
+                                <option value="6">Last Month</option>
+                                <option value="7">Custom Range</option>
+                            </select>
                         </div>
-                        <div className="new-admin">New Admin User</div>
                         <div className="search">
-                            <form onSubmit={null}>
-                                <input type="text" placeHolder="Search" />
-                                <button type="submit" className="search-button"><i className="fa fa-search"></i></button>
-                            </form>
+                            <input type="search" placeholder="Search" />
+                            <span className="fa fa-search"></span>
                         </div>
                     </div>
                     <div style={{ marginRight: "10px" }}>
-                        <div className="settings-title users-title">
+                        <div className="settings-title admin-user">
                             <div>Email</div>
                             <div>Role</div>
                             <div>Current Sign In</div>

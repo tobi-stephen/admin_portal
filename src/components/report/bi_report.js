@@ -35,14 +35,20 @@ class BIReport extends Component {
                 <div  className="main">
                     <div className="main-top">
                         <div className="heading">BI Report</div>
-                        <div className="date-section">
-                            Time
+                        <div >
+                            <select className="date-section">
+                                <option value="1">Today</option>
+                                <option value="2">Yesterday</option>
+                                <option value="3">Last 7 Days</option>
+                                <option value="4">Last 30 Days</option>
+                                <option value="5">This Month</option>
+                                <option value="6">Last Month</option>
+                                <option value="7">Custom Range</option>
+                            </select>
                         </div>
                         <div className="search">
-                            <form onSubmit={null}>
-                                <input type="text" placeHolder="Search" />
-                                <button type="submit" className="search-button"><i className="fa fa-search"></i></button>
-                            </form>
+                            <input type="search" placeholder="Search" />
+                            <span className="fa fa-search"></span>
                         </div>
                     </div>
                     <div style={{ marginRight: "10px" }}>

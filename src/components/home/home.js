@@ -12,12 +12,20 @@ class Home extends Component{
                 <div className="main">
                     <div className="main-top">
                         <div className="heading">Dashboard</div>
-                        <div className="date-section">Time</div>
+                        <div >
+                            <select className="date-section">
+                                <option value="1">Today</option>
+                                <option value="2">Yesterday</option>
+                                <option value="3">Last 7 Days</option>
+                                <option value="4">Last 30 Days</option>
+                                <option value="5">This Month</option>
+                                <option value="6">Last Month</option>
+                                <option value="7">Custom Range</option>
+                            </select>
+                        </div>
                         <div className="search">
-                            <form onSubmit={null}>
-                                <input type="text" placeholder="Search" />
-                                <button type="submit" className="search-button"><i className="fa fa-search"></i></button>
-                            </form>
+                            <span className="fa fa-search"></span>
+                            <input type="search" placeholder="Search" />
                         </div>
                     </div>
                     <div className="main-below">

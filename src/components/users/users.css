@@ -1,5 +1,13 @@
-.users-content div, .users-title div {
-    min-width: 150px;
+.users-content div, .users-title div, .admin-user div {
+    min-width: 130px;
+}
+
+.admin-user div:nth-child(3), .admin-user div:nth-child(1){
+    min-width: 180px;
+}
+
+.users-content div:nth-child(1), .users-title div:nth-child(1) {
+    min-width: 40px;
 }
 
 .users-content {

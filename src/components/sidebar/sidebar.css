@@ -2,6 +2,10 @@
     box-sizing: content-box;
 }
 
+.iconss {
+    color: "#9B9B9B"
+}
+
 .sidebar-nav {
     background-color: #2F2D2E;
     background-size: cover;
@@ -46,15 +50,7 @@
     display: none;
 }
 
-.show, .dropdown:hover  {
-    display: block;
-}
-
-.sidebar-link span:hover {
-    color: #FFFFFF
-}
-
-.sub-sidebar-link span:hover {
+.sidebar-link span:hover, .sub-sidebar-link span:hover {
     color: #FFFFFF
 }
 

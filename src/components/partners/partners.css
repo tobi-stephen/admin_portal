@@ -1,3 +1,7 @@
+.main-below-p {
+    position: relative;
+}
+
 .merchant-top, .no-partner{
     color: #C0C0C0;
     font-family: CircularStd;
@@ -35,8 +39,17 @@
     border-radius: 3px;
     width: 40%;
     height: 35px;
+    padding: 5px 35px 0px 10px;
+    margin-bottom: 20px;
+}
+
+.rectangle-x {
+    border: none;
+    border-radius: 3px;
+    width: 40%;
+    height: 35px;
     padding: 5px 35px 6px 16px;
-    margin: 10px, 0px, 10px, 0px;
+    margin-bottom: 20px;
 }
 
 .rectangle-1 {
@@ -59,6 +72,18 @@
     text-align: left;
 }
 
+.submit {
+    background-color: red;
+    color: #FFFFFF;
+    border-radius: 3px;
+    box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.13);
+}
+
+.cancel {
+    background-color: grey;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
 @media screen and (max-width: 800px) {
     .no-partner {
         margin-left: 0%;
