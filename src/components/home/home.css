@@ -1,3 +1,4 @@
+
 .main {
     padding-top: 80px;
     margin-left: 300px;
@@ -55,65 +56,51 @@
     width: auto;
 }
 
-.main-below {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 2fr;
-    margin-right: 50px;
-}
-
-.section-1 {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 2fr;
-    width: 100%;
-    height: auto;
-}
-
 .customers, .redemption-value, .points-redeemed, .cash-spend{
     background-color: #FFFFFF;
     border: 0.5px solid #D6D6D6;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    height: 200px;
+    width: 43%;
+    margin: 10px;
+}
 
+.main-below {
+    display: block;
+    text-align: center;
+}
+
+.section-1, .summary{
+    border: 0.5px solid #979797;
+    opacity: 0.6111865942028986;
+    height: 450px;
+    width: 48%;
+}
+
+.section-1 {
+    float: left;
+    display: block;
+    border: transparent;
 }
 
 .summary {
-    border: 0.5px solid #979797;
-    opacity: 0.6111865942028986;
-    width: 100%;
-    height: auto;
-    grid-column-start: 2;
-    grid-column-end: 10;
-    grid-row-start: 1;
-    grid-row-end: 5;
+    float: right;
 }
 
 .customers {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 5;
+    float: left;
 }
 
 .redemption-value {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 5;
+    float: right;
 }
 
 .points-redeemed {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 9;
+    float: left;
 }
 
 .cash-spend {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 9;
+    float: right;
 }
 
 
@@ -122,12 +109,13 @@
     .main-top .search {
         float: none;
     }
-
+    .main-top {
+        margin-right: 50px;
+    }
     .main-top input[type=text] {
         border: 1px solid #ccc;
     }
 }
-
 
 @media screen and (max-width: 650px) {
     /* .main {

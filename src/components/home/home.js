@@ -33,9 +33,11 @@ class Home extends Component{
                             <div className="customers">Registered Customers</div>
                             <div className="redemption-value">Value of Redemption</div>
                             <div className="points-redeemed">Points Redeemed</div>
-                            <div className="cash-spend">Cash Spend (Debit Card)</div>
+                            <div className="cash-spend">Cash Spend <br/>(Debit Card)</div>
                         </div>
-                        <div className="summary">Summary</div>
+                        <div className="summary">
+                            <div style={{ margin: "10px" }}>Summary</div>
+                        </div>
                     </div>
                 </div>
             </div>
