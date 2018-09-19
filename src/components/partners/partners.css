@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.merchant-top, .no-partner{
+.no-partner{
     color: #C0C0C0;
     font-family: CircularStd;
     font-size: 18px;
@@ -29,7 +29,8 @@
     border: 0.5px dotted rgba(151, 151, 151, 0.6);
     border-radius: 5px;
     width: fit-content;
-    height: auto;
+    height: 20px;
+    padding: 10px;
     background-size: inherit;
 }
 

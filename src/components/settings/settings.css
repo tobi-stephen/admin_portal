@@ -13,7 +13,11 @@
     text-emphasis: after 1px; 
     text-align: left;
     display: inline-block;
-    min-width: 180px;
+    min-width: 160px;
+}
+
+.settings-content div:nth-child(5){
+    min-width: 130px;
 }
 
 .settings-content {
