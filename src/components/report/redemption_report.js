@@ -14,7 +14,7 @@ class RedemptionReport extends Component {
         for (let i = 0; i < 15; i++){
             userList.push(
                 <div className="settings-content users-content">
-                    <div>Airtime</div>
+                    <div style={{minWidth: "80px"}}>Airtime</div>
                     <div>500</div>
                     <div>100</div>
                     <div>Interswitch</div>
@@ -53,7 +53,7 @@ class RedemptionReport extends Component {
                     </div>
                     <div style={{ marginRight: "10px" }}>
                         <div className="settings-title users-title">
-                            <div>Product</div>
+                            <div style={{minWidth: "80px"}}>Product</div>
                             <div>Value(Points)</div>
                             <div>Value(Naira)</div>
                             <div>Portal Partner</div>

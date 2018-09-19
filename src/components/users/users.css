@@ -10,7 +10,7 @@
     min-width: 40px;
 }
 
-.users-content {
+.users-content, .admin-user{
     margin-bottom: 5px;
 }
 

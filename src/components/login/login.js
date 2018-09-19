@@ -30,9 +30,11 @@ class Login extends Component{
 
     render(){
         return(
-            this.state.toHome ?
-            <Redirect to={"/home"} />
-            :
+            <div>
+            {
+                this.state.toHome ?
+                (<Redirect to={"/home"} />)
+                :
             <div className="login-bg">
                 <div className="login-card">
                     <form onSubmit={this.onsubmit} className="login-form">
@@ -50,6 +52,8 @@ class Login extends Component{
                     </form>
                     <button className="request-access-button"><span className="request-access-text">Request for Access</span></button>
                 </div>
+            </div>
+            }
             </div>
         )
     }
