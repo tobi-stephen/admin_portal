@@ -13,59 +13,82 @@ class Sidebar extends Component {
 
                 <div style={styles.sideDivLink} className="dropdown"  onClick={() => {
                     let display = document.getElementById("id1");
+                    let icon = document.getElementById("idr1")
             
                     if (display.style.display === "block") {
                         display.style.display =  "none";
+                        icon.className = "fa fa-angle-right"
                     } else {
                         display.style.display =   "block";
+                        icon.className = "fa fa-angle-down"
                     }
                     console.log(display.style.display)
                 }}>
-                    <Link className="sidebar-link" to={"#"}><i className="fa fa-file" style={{ color: "#9B9B9B"}}></i>  <span>Content Management</span></Link>
+                    <Link className="sidebar-link" to={"#"}>
+                        <i className="fa fa-file" style={{ color: "#9B9B9B"}}></i>  <span>Content Management</span>
+                        <i id="idr1" style={{position: "relative", left: "30%"}} className="fa fa-angle-right"></i>
+                    </Link>
                     <div id="id1" className="dropdown-content"><Link className="sub-sidebar-link" to={"/partners"}><span>Merchant Partners</span></Link></div>
                 </div>
 
                 <div  style={styles.sideDivLink} className="dropdown" onClick={() => {
                     let display = document.getElementById("id2");
-            
+                    let icon = document.getElementById("idr2")
+
                     if (display.style.display === "block") {
                         display.style.display =  "none";
+                        icon.className = "fa fa-angle-right"
                         document.getElementById("id3").style.display = "none";
                     } else {
                         display.style.display =  "block";
+                        icon.className = "fa fa-angle-down"
                         document.getElementById("id3").style.display = "block";
                     }
                 }}>
                     
-                        <Link className="sidebar-link" to={"#"}><i className="fa fa-user" style={{ color: "#9B9B9B"}}></i>  <span>User Management</span></Link>
-                        <div id="id2" className="dropdown-content"><Link className="sub-sidebar-link" to={"/users"}><span>Users</span></Link></div>
-                        <div id="id3" className="dropdown-content"><Link className="sub-sidebar-link" to={"/admin_users"}><span>Admin Users</span></Link></div>
+                        <Link className="sidebar-link" to={"#"}>
+                            <i className="fa fa-user" style={{ color: "#9B9B9B"}}></i>  <span>User Management</span>
+                            <i id="idr2" style={{position: "relative", left: "50%"}} className="fa fa-angle-right"></i>
+                        </Link>
+                            <div id="id2" className="dropdown-content">
+                                <Link className="sub-sidebar-link" to={"/users"}><span>Users</span></Link>
+                            </div>
+                            <div id="id3" className="dropdown-content">
+                                <Link className="sub-sidebar-link" to={"/admin_users"}><span>Admin Users</span></Link>
+                            </div>
                 </div>
                 <br/>
                 <div style={styles.sideDivLink} className="dropdown" onClick={() => {
                     let display = document.getElementById("id4");
-            
+                    let icon = document.getElementById("idr3")
+
                     if (display.style.display === "block") {
                         display.style.display =  "none";
+                        icon.className = "fa fa-angle-right"
                         document.getElementById("id5").style.display = "none";
                         document.getElementById("id6").style.display = "none";
                     } else {
                         display.style.display =  "block";
+                        icon.className = "fa fa-angle-down"
                         document.getElementById("id5").style.display = "block";
                         document.getElementById("id6").style.display = "block";                    
                     }
                 }}>
-                    <Link className="sidebar-link" to={"#"}><span><i className="fa fa-heartbeat" style={{ color: "#9B9B9B"}}></i>  Reporting</span></Link>
+                    <Link className="sidebar-link" to={"#"}>
+                        <i className="fa fa-heartbeat" style={{ color: "#9B9B9B"}}></i> <span>Reporting</span>
+                        <i id="idr3" style={{position: "relative", left: "140px"}} className="fa fa-angle-right"></i>
+                    </Link>
                     <div id="id4" className="dropdown-content"><Link className="sub-sidebar-link" to={"/portal_report"}><span>Portal Report</span></Link></div>
                     <div id="id5" className="dropdown-content"><Link className="sub-sidebar-link" to={"/redemption_report"}><span>Redemption Report</span></Link></div>
                     <div id="id6" className="dropdown-content"><Link className="sub-sidebar-link" to={"/bi_report"}><span>BI</span></Link></div>
                 </div>
                 <div style={styles.sideDivLink}><Link className="sidebar-link" to={"/settings"}><span><i className="fa fa-cog" style={{ color: "#9B9B9B"}}></i>  System Settings</span></Link></div>
                 <div style={{ height:"150px" }}></div>
-                <div><img alt="UBA" src={logo} className="uba-logo"/></div>
-                <div style={styles.sideDivLink}>
-                    <span className="sidebar-link">Copyright 2018 UBA Group PLC.</span>
-                    <span className="sidebar-link">Powered by Interswitch</span>
+                <div  className="sidebar-link" style={styles.bottomDiv}>
+                    <div><img alt="UBA" src={logo} className="uba-logo"/></div>
+                    <span>Copyright 2018 UBA Group PLC.</span>
+                    <br/>
+                    <span >Powered by Interswitch</span>
                 </div>
             </div>
         </div>
@@ -74,8 +97,9 @@ class Sidebar extends Component {
 }
 
 const styles = {
-    sideDiv: { marginTop: "150px", marginLeft: "20px" },
-    sideDivLink: { marginBottom: "20px"},
+    // sideDiv: { marginTop: "150px", marginLeft: "20px" },
+    sideDivLink: { fontSize: "17px", marginBottom: "20px"},
+    bottomDiv: { fontSize: "17px", position: "relative", bottom: "", },
     searchButton: { height: "30px", borderRadius: "5px",}
 }
 
