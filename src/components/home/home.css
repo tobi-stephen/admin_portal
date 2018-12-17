@@ -1,8 +1,8 @@
 
 .main {
-    padding-top: 80px;
-    margin-left: 300px;
-    margin-right:50px;
+    padding-top: 7%;
+    margin-left: 25%;
+    margin-right:8%;
     position: relative;
 }
 
@@ -12,9 +12,8 @@
 
 .heading{
     color: #4A4A4A;
-    font-family: CircularStd;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 28px;
+    /* font-weight: 400; */
     line-height: 24px;
     text-align: left;
     grid-column: 1;
@@ -23,57 +22,96 @@
 
 .date-section {
     border: 0.5px solid #ECECEC;
-    border-radius: 10px;
-    height:15px;
+    border-radius: 15px;
+    height:35px;
     padding-left: 5px;
-    font-size: 12px;
+    font-size: 15px;
+    width: 70%;
     color: #4A4A4A;
 }
 
 .search {
-    grid-column: 10;
+    grid-column: 5;
     position: relative;
+    margin-right: 10px
 }
 
-.search-button { 
+.search-bar { 
     border-radius: 5px;
 }
 
 .search input[type=search] {
     border: 0.5px solid #C0C0C0;
     border-radius: 5px;
-    width: auto;
-    height: 30px;
-    text-indent: 32px;
+    width: 100%;
+    height: 90%;
+    text-indent: 15%;
+    align-items: flex-end;
 }
 
 .search .fa-search {
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 30%;
+    bottom: 50%;
+    left: 5%;
     background: #FFFFFF;
-    height: fit-content;
+    height: auto;
     width: auto;
-}
-
-.customers, .redemption-value, .points-redeemed, .cash-spend{
-    background-color: #FFFFFF;
-    border: 0.5px solid #D6D6D6;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    height: 200px;
-    width: 43%;
-    margin: 10px;
 }
 
 .main-below {
     display: block;
-    text-align: center;
+    text-align: left;
+}
+
+.customers, .redemption-value, .points-redeemed, .cash-spend{
+    background-color: #FFFFFF;
+    border-bottom: 3px;
+    border: 0.5px solid rgb(211, 194, 194);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    height:70%;
+    width: 45%;
+    margin: 1%;
+}
+
+.customers {
+    border-bottom: solid rgb(226, 17, 17);
+    float: left;
+}
+
+.redemption-value {
+    border-bottom: solid rgb(96, 226, 113);
+    float: right;
+}
+
+.points-redeemed {
+    border-bottom: solid rgb(65, 156, 144);
+    float: left;
+}
+
+.cash-spend {
+    border-bottom: solid rgb(141, 18, 145);
+    float: right;
+}
+
+.description {
+    font-size: 19px;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+
+.values {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 15%;
+    margin-left: 10%
 }
 
 .section-1, .summary{
     border: 0.5px solid #979797;
     opacity: 0.6111865942028986;
-    height: 450px;
+    height: 28rem;
     width: 48%;
 }
 
@@ -85,25 +123,29 @@
 
 .summary {
     float: right;
+    display: block;
+    margin: 10px;
+    height: 41rem
 }
 
-.customers {
-    float: left;
+.summary-heading {
+    padding: 4% 5% 2% 5%;
+    display: grid;
+    /* height: 10%; */
+    border: 0.5px solid #979797;
 }
 
-.redemption-value {
-    float: right;
+.summary-key{
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 4%;
+    margin-bottom: 2%;
 }
 
-.points-redeemed {
-    float: left;
+.summary-value{
+    font-size: 24px;
+    font-weight: 800
 }
-
-.cash-spend {
-    float: right;
-}
-
-
 
 @media screen and (max-height: 600px) {
     .main-top .search {
@@ -111,6 +153,7 @@
     }
     .main-top {
         margin-right: 50px;
+        /* margin-top: 150px */
     }
     .main-top input[type=text] {
         border: 1px solid #ccc;
@@ -121,4 +164,7 @@
     /* .main {
         position: fixed;
     } */
+    .main-top {
+        margin-top: 150px;
+    }
 }

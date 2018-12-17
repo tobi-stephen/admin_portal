@@ -1,7 +1,6 @@
 .rewards-portal {
     color: #2F2D2E;
     background: white;
-    font-family: CircularStd;
     font-size: 24px;
     font-weight: 900;
     letter-spacing: -0.5px;
@@ -26,11 +25,8 @@
 }
 
 .icon-right {
-    text-align: right;
-    font-size: 10px;
     margin-right: 5%;
     float: right;
     height: 40%;
-    font-size: 20px;
-    width: fit-content
+    font-size: 70%;
 }

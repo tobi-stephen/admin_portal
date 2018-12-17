@@ -20,7 +20,7 @@ class Header extends Component {
                     <img alt="Rewards Portal" src={rewards} className="rewards-logo"/>
                     <div className="icon-right">
                         <span style={{margin:10}} class="fa-stack fa-xs">
-                            <i class="fa fa-stack-1x"></i>
+                            {/* <i class="fa fa-stack-1x"></i> */}
                             <i style={{color: "white", backgroundColor:"grey", borderRadius:"30px"}} class="fa fa-bell fa-stack-1x"></i>
                         </span>
                         <span class="fa-stack fa-xs">

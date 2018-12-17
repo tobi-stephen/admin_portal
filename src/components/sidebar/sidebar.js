@@ -26,7 +26,7 @@ class Sidebar extends Component {
                 }}>
                     <Link className="sidebar-link" to={"#"}>
                         <i className="fa fa-file" style={{ color: "#9B9B9B"}}></i>  <span>Content Management</span>
-                        <i id="idr1" style={{position: "relative", left: "30%"}} className="fa fa-angle-right"></i>
+                        <i id="idr1" style={{position: "relative", left: "20%"}} className="fa fa-angle-right"></i>
                     </Link>
                     <div id="id1" className="dropdown-content"><Link className="sub-sidebar-link" to={"/partners"}><span>Merchant Partners</span></Link></div>
                 </div>
@@ -48,7 +48,7 @@ class Sidebar extends Component {
                     
                         <Link className="sidebar-link" to={"#"}>
                             <i className="fa fa-user" style={{ color: "#9B9B9B"}}></i>  <span>User Management</span>
-                            <i id="idr2" style={{position: "relative", left: "50%"}} className="fa fa-angle-right"></i>
+                            <i id="idr2" style={{position: "relative", left: "40%"}} className="fa fa-angle-right"></i>
                         </Link>
                             <div id="id2" className="dropdown-content">
                                 <Link className="sub-sidebar-link" to={"/users"}><span>Users</span></Link>
@@ -76,7 +76,7 @@ class Sidebar extends Component {
                 }}>
                     <Link className="sidebar-link" to={"#"}>
                         <i className="fa fa-heartbeat" style={{ color: "#9B9B9B"}}></i> <span>Reporting</span>
-                        <i id="idr3" style={{position: "relative", left: "140px"}} className="fa fa-angle-right"></i>
+                        <i id="idr3" style={{position: "relative", left: "135px"}} className="fa fa-angle-right"></i>
                     </Link>
                     <div id="id4" className="dropdown-content"><Link className="sub-sidebar-link" to={"/portal_report"}><span>Portal Report</span></Link></div>
                     <div id="id5" className="dropdown-content"><Link className="sub-sidebar-link" to={"/redemption_report"}><span>Redemption Report</span></Link></div>
