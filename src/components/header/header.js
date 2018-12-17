@@ -19,8 +19,15 @@ class Header extends Component {
                 <div className="rewards-portal">
                     <img alt="Rewards Portal" src={rewards} className="rewards-logo"/>
                     <div className="icon-right">
-                        <span>Hello, Admin  </span>
-                        <button onClick={this.onclick}>Log Out</button>
+                        <span style={{margin:10}} class="fa-stack fa-xs">
+                            <i class="fa fa-stack-1x"></i>
+                            <i style={{color: "white", backgroundColor:"grey", borderRadius:"30px"}} class="fa fa-bell fa-stack-1x"></i>
+                        </span>
+                        <span class="fa-stack fa-xs">
+                            {/* <i class="fa fa-stack-2x"></i> */}
+                            <i style={{color: "white", backgroundColor:"grey", borderRadius:"30px"}} class="fa fa-user fa-stack-1x"></i>
+                        </span>
+                        {/* <button onClick={this.onclick}></button> */}
                     </div>
                 </div>
             }
