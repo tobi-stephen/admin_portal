@@ -97,7 +97,6 @@ class Sidebar extends Component {
 }
 
 const styles = {
-    // sideDiv: { marginTop: "150px", marginLeft: "20px" },
     sideDivLink: { fontSize: "17px", marginBottom: "20px"},
     bottomDiv: { fontSize: "17px", position: "relative", bottom: "", },
     searchButton: { height: "30px", borderRadius: "5px",}

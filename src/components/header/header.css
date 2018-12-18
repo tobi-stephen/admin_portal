@@ -30,3 +30,21 @@
     height: 40%;
     font-size: 70%;
 }
+
+.user-options{ 
+    width: 10em;
+    display: none;
+    margin-top: 100%;
+    margin-right: 0
+}
+
+.user-options button {
+    background-color: grey;
+    text-align: end;
+    border: none;
+    color: white;
+    margin-top: 5%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5%
+}
