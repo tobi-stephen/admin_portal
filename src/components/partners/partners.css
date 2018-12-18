@@ -5,25 +5,25 @@
     padding-top: 3%;
 }
 
-form {
+.partner-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
 
-form label {
+.partner-form label {
     display: block;
     font-size: 20px
 }
 
-form div {
+.partner-form div {
     margin: 20px;
 }
 
-input {
-    padding: 1em;
+.partner-form input {
+    padding: 0.7em;
     width: 100%;
-    min-height: 30px;
+    font-size: 20px;
     border: 1px solid #000;
 }
 
