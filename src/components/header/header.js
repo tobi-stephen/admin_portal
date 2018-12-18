@@ -6,10 +6,10 @@ import './header.css';
 class Header extends Component {
     state = { toLogin: false}
 
-    onclick = (event) => {
-        event.preventDefault()
-        this.setState({toLogin: true})
-    }
+    // onclick = (event) => {
+    //     event.preventDefault()
+    //     this.setState({toLogin: true})
+    // }
 
     render(){
         return(
@@ -22,27 +22,26 @@ class Header extends Component {
                         <img alt="Rewards Portal" src={rewards} className="rewards-logo"/>
                     </Link>
                     <div className="icon-right">
-                        <div style={{margin:10}} class="fa-stack fa-sm dropdown">
-                            <i style={{color: "white", backgroundColor:"grey", borderRadius:"30px"}} class="fa fa-bell fa-stack-1x"></i>
-                        </div>
-                        <div class="fa-stack fa-sm"
-                            onClick={() => {
-                                let disp = document.getElementById("options");
-
-                                if (disp.style.display === "block")
-                                    disp.style.display = "none";
-                                else
-                                    disp.style.display = "block";
-                            }}
-                            >
-                            <Link to={"#"}>
-                                <i style={{color: "white", backgroundColor:"grey", borderRadius:"30px"}} class="fa fa-user fa-stack-1x"></i>
-                            </Link>
-                            <div className="user-options" id="options">
-                                <button onClick={this.onclick}>Log Out</button>
+                        <div style={{margin:10}} class="fa-stack fa-sm drop-down">
+                            <div className="drop-btn">
+                                <Link to={"#"}>
+                                    <i class="fa fa-bell fa-stack-1x"></i>
+                                </Link>
+                            </div>
+                            <div className="drop-down-content">
+                                <Link to={"#"}>No Notifications</Link>
                             </div>
                         </div>
-                        {/* <button onClick={this.onclick}></button> */}
+                        <div class="fa-stack fa-sm drop-down">
+                            <div className="drop-btn">
+                                <Link to={"#"}>
+                                    <i class="fa fa-user fa-stack-1x"></i>
+                                </Link>
+                            </div>
+                            <div className="drop-down-content">
+                                <Link to={"/login"}>Log Out</Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             }

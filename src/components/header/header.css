@@ -31,20 +31,36 @@
     font-size: 70%;
 }
 
-.user-options{ 
-    width: 10em;
-    display: none;
-    margin-top: 100%;
-    margin-right: 0
+.icon-right i {
+    color: white;
+    background-color:grey;
+    border-radius:30px
 }
 
-.user-options button {
-    background-color: grey;
-    text-align: end;
-    border: none;
-    color: white;
-    margin-top: 5%;
+.drop-down-content {
+    display:none;
+    position: absolute;
+    background-color: #F9F9F9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 100%;
+}
+
+.drop-down-content a {
+    color: black;
+    padding-left: 5%;
     font-size: 18px;
     font-weight: bold;
-    padding: 5%
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.drop-down-content a:hover {
+    background-color: #ddd;
+}
+
+.drop-down:hover .drop-down-content {
+    display: block;
 }
