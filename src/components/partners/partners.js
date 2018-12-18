@@ -24,7 +24,7 @@ class Partners extends Component {
                             </div> 
                             : 
                             <div className="no-partner">
-                                There are no merchant partners yet. <Link to={"/create_partner"} className="create-1">Create one</Link>
+                                There are no Merchant Partners yet. <Link to={"/create_partner"} className="create-1">Create one</Link>
                             </div>
                         }
                     </div>

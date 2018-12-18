@@ -1,10 +1,34 @@
 .main-below-p {
-    position: relative;
+    display: grid;
+    grid-template-columns: 100% 100%;
+    min-width: 100%;
+    padding-top: 3%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 20px
+}
+
+form div {
+    margin: 20px;
+}
+
+input {
+    padding: 1em;
+    width: 100%;
+    min-height: 30px;
+    border: 1px solid #000;
 }
 
 .no-partner{
     color: #C0C0C0;
-    font-family: CircularStd;
     font-size: 18px;
     font-weight: 300;
     letter-spacing: -0.25px;
@@ -16,6 +40,7 @@
 
 .partners {
     position: relative;
+    padding: 20% 30%;
 }
 
 .create-1 {
@@ -24,53 +49,13 @@
 
 .no-partner, .yes-partner{
     color: #4A4A4A;
-    font-size: 14px;
+    font-size: 20px;
     background-color: #FFFFFF;
-    border: 0.5px dotted rgba(151, 151, 151, 0.6);
+    border: 2px dotted rgba(151, 151, 151, 0.6);
     border-radius: 5px;
     width: fit-content;
-    height: 20px;
-    padding: 10px;
+    padding: 4%;
     background-size: inherit;
-}
-
-.rectangle {
-    background-color: #FBFBFB;
-    border: 1px solid #DDDDDD;
-    border-radius: 3px;
-    width: 40%;
-    height: 35px;
-    padding: 5px 35px 0px 10px;
-    margin-bottom: 20px;
-}
-
-.rectangle-x {
-    border: none;
-    border-radius: 3px;
-    width: 40%;
-    height: 35px;
-    padding: 5px 35px 6px 16px;
-    margin-bottom: 20px;
-}
-
-.rectangle-1 {
-    float: left;
-}
-
-.rectangle-2 {
-    float: right;
-}
-
-.input-box {
-    border: none;
-    color: #868E96;
-    font-family: CircularStd;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: -0.23px;
-    line-height: 25px;
-    width: 100%;
-    text-align: left;
 }
 
 .submit {
@@ -85,6 +70,7 @@
     color: #FFFFFF;
     border-radius: 3px;
 }
+
 @media screen and (max-width: 800px) {
     .no-partner {
         margin-left: 0%;

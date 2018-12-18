@@ -14,68 +14,61 @@ class CreatePartner extends Component {
                         <div className="heading">Merchant Partners</div>
                     </div>
                     <div className="main-below-p" style={{ marginRight: "50px" }}>
-                        <form onSubmit={null}>
+                        <form className="partner-form" onSubmit={null}>
                             
                             <div>
-                                {/* <label for="name">NAME *</label> */}
-                                <div className="rectangle rectangle-1">
-                                    <input className="input-box" placeholder="NAME *" type="text" id="name" required></input>
-                                </div>
+                                <label for="name">NAME *</label>
+                                <input type="text" id="name" required></input>
+                            </div>
+                                
+                            <div >
+                                <label for="address">ADDRESS *</label>
+                                <input type="text" id="address" required></input>
+                            </div>
+
+                            <div>
+                                <label for="email">EMAIL</label>
+                                <input type="text" id="email"></input>
+                            </div>
+
+                            <div>
+                                <label for="phone">PHONE *</label>
+                                <input type="text" id="phone" required></input>
+                            </div>
+
+                            <div>
+                                <label for="info">ADDITIONAL INFO</label>
+                                <input type="text" id="info"></input>
+                            </div>
+
+                            <div>
+                                <label for="image">IMAGE (SIZE: 400 X 400 PIXELS) *</label>
+                                <input type="file" accept="image/*" id="image" required></input>
+                            </div>
+
+                            <div>
+                                <label for="website">WEBSITE</label>
+                                <input type="text" id="website"></input>
                             </div>
                             
-                            <div>
-                                {/* <label for="address">ADDRESS *</label> */}
-                                <div className="rectangle rectangle-2">
-                                    <input className="input-box" placeholder="ADDRESS *" type="text" id="address" required></input>
+                            <div >
+                                <div style={{float: "left"}}>
+                                    <input type="checkbox" name="active" value="Active"/>Active 
+                                </div>
+                                <div style={{float: "left"}}>
+                                    <input type="checkbox" name="featured" value="Featured"/>Featured
+                                </div>
+                                <div style={{ float: "left"}}>
+                                    <input type="checkbox" name="home_delivery" value="Does home delivery"/>Does home delivery
                                 </div>
                             </div>
-
                             <div>
-                                {/* <label for="email">EMAIL</label> */}
-                                <div className="rectangle rectangle-1">
-                                    <input className="input-box" placeholder="EMAIL" type="text" id="email"></input>
+                                <div style={{marginLeft: 0, float: "left", width: "50%"}}>
+                                    <input className="submit" style={{float:"left"}} type="submit" style={{ fontSize: "18px" }} value="Create Discount Partner" />
                                 </div>
-                            </div>
-
-                            <div>
-                                {/* <label for="phone">PHONE *</label> */}
-                                <div className="rectangle rectangle-2">
-                                    <input className="input-box" placeholder="PHONE" type="text" id="phone" required></input>
+                                <div style={{marginLeft: "10%", width: "30%", float: "left"}}>
+                                    <input className="cancel" style={{ float: "left"}} type="button" style={{ fontSize: "18px" }} value="Cancel"/>
                                 </div>
-                            </div>
-
-                            <div>
-                                {/* <label for="info">ADDITIONAL INFO</label> */}
-                                <div className="rectangle rectangle-1">
-                                    <input className="input-box" placeholder="ADDITIONAL INFO" type="text" id="info"></input>
-                                </div>
-                            </div>
-
-                            <div>
-                                {/* <label for="image">IMAGE (SIZE 400 X 400 PIXELS) *</label> */}
-                                <div className="rectangle rectangle-2">
-                                    <input className="input-box" placeholder="IMAGE (SIZE 400 X 400 PIXELS" type="file" accept="image/*" id="image" required></input>
-                                </div>
-                            </div>
-
-                            <div>
-                                {/* <label for="website">WEBSITE</label> */}
-                                <div className="rectangle rectangle-1">
-                                    <input className="input-box" placeholder="WEBSITE" type="text" id="website"></input>
-                                </div>
-                            </div>
-                            
-                            <div className=" rectangle-2">
-                                <input type="checkbox" name="active" value="Active"/>Active <br/>
-                                <input type="checkbox" name="featured" value="Featured"/>Featured <br/>
-                                <input type="checkbox" name="home_delivery" value="Does home delivery"/>Does home delivery
-                            </div>
-
-                            <div className="rectangle-x rectangle-2" ></div>
-
-                            <div className="rectangle-1">
-                                <input className="input-box submit" style={{float:"left"}} type="submit" value="Create Discount Partner" />
-                                <input className="cancel"  type="button" value="Cancel"/>
                             </div>
                         </form>
                     </div>
