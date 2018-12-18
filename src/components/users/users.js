@@ -52,17 +52,37 @@ class Users extends Component {
                             <span className="fa fa-search"></span>
                         </div>
                     </div>
-                    <div style={{ marginRight: "10px" }}>
-                        <div className="settings-title users-title">
-                            <div>ID</div>
-                            <div>First Name</div>
-                            <div>Last Name</div>
-                            <div>Email</div>
-                            <div>Phone</div>
-                            <div>Joined</div>
-                        </div>
-                        {this.listUsers()}
-                        
+                    <div className="settings">
+                        <table style={{width: "100%"}}>
+                            <tr>
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Joined</th>
+                                <th></th>
+                            </tr>
+                            <tr className="bordered">
+                                <td>10</td>
+                                <td>Remilekun</td>
+                                <td>Chibundu</td>
+                                <td>istwester@yahoo.com</td>
+                                <td>08078123456</td>
+                                <td>{new Date("October 21 2017").toUTCString().substr(5, 11)}</td>
+                                <td><i className="fa fa-ellipsis-h"></i></td>
+                            </tr>
+                            <br />
+                            <tr className="bordered">
+                                <td>10</td>
+                                <td>Remilekun</td>
+                                <td>Chibundu</td>
+                                <td>istwester@yahoo.com</td>
+                                <td>08078123456</td>
+                                <td>{new Date("October 21 2017").toUTCString().substr(5, 11)}</td>
+                                <td><i className="fa fa-ellipsis-h"></i></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
                 
