@@ -64,10 +64,10 @@ class CreatePartner extends Component {
                             </div>
                             <div>
                                 <div style={{marginLeft: 0, float: "left", width: "50%"}}>
-                                    <input className="submit" style={{float:"left"}} type="submit" style={{ fontSize: "18px" }} value="Create Discount Partner" />
+                                    <input className="submit" style={{fontSize: "18px", float:"left"}} type="submit" value="Create Discount Partner" />
                                 </div>
                                 <div style={{marginLeft: "10%", width: "30%", float: "left"}}>
-                                    <input className="cancel" style={{ float: "left"}} type="button" style={{ fontSize: "18px" }} value="Cancel"/>
+                                    <input className="cancel" style={{fontSize: "18px", float: "left"}} type="button" value="Cancel"/>
                                 </div>
                             </div>
                         </form>

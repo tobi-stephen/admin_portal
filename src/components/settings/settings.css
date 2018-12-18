@@ -18,7 +18,7 @@ table {
 
  tr.bordered  {
     border-collapse: collapse;
-    height: 100%;
+    height: auto;
     border:1pt solid black;
 }
 
