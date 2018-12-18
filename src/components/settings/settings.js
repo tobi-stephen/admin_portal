@@ -11,23 +11,26 @@ class Settings extends Component {
                 <Sidebar />
                 <div className="main">
                     <div className="main-top">
-                        <div className="heading">Settings</div>
+                        <div className="heading settings-head">System Settings</div>
                     </div>
-                    <div>
-                        <div className="settings-title">
-                            <div >First Points Conversion Rate</div>
-                            <div>Max Bank Account Per User</div>
-                            <div>Max UBA Policies Per User</div>
-                            <div>Created At</div>
-                            <div>Updated At</div>
-                        </div>
-                        <div className="settings-content">
-                            <div>0.2</div>
-                            <div>3</div>
-                            <div>1</div>
-                            <div>{new Date("October 21 2017").toLocaleDateString()}</div>
-                            <div>{new Date("October 27 2017").toLocaleDateString()}</div>
-                        </div>
+                    <div className="settings">
+                        <table style={{width:"100%"}}>
+                            <tr>
+                                <th>First Points Conversion Rate</th>
+                                <th>Max Bank Account Per User</th>
+                                <th>Max UBA Policies Per User</th>
+                                <th>Created At</th>
+                                <th>Updated At</th>
+                            </tr>
+                            <tr className="bordered">
+                                <td>0.2</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>{new Date("October 21 2017").toUTCString().substr(5, 11)}</td>
+                                <td>{new Date("October 21 2017").toUTCString().substr(5, 11)}</td>
+                                <td><i className="fa fa-ellipsis-v"></i></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
