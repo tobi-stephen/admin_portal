@@ -55,7 +55,40 @@
     color: #FFFFFF
 }
 
-@media screen and (max-height: 450px) {
-    .sidebar-nav {padding-top: 15px;}
+@media screen and (max-width: 750px) {
+    .sidebar-nav {
+        padding-top: 25%;
+        width: 40%;
+        position: fixed;
+    }
+
     .sidebar-link {font-size: 18px;}
+
+    .fa-angle-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .sidebar-nav {
+        padding-top: 25%;
+        width: 18%;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .sidebar-nav {
+        padding-top: 25%;
+        width: 22%;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .sidebar-nav {
+        padding-top: 25%;
+        width: 30%;
+        position: fixed;
+    }
 }

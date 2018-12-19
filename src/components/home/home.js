@@ -14,7 +14,7 @@ class Home extends Component{
                 <div className="main">
                     <div className="main-top">
                         <div className="heading">Dashboard</div>
-                        <div >
+                        <div className="date-style">
                             <select className="date-section">
                                 <option value="1">Today: {this.d.getDate()} {this.d.toString().substr(4,4)}</option>
                                 <option value="2">Yesterday</option>
@@ -37,13 +37,13 @@ class Home extends Component{
                                 <div className="description">Registered Customers</div>
                                 <div className="charts"></div>
                             </div>
-                            <div className="redemption-value">
-                            <div className="values">1,234</div>
+                            <div className="redemption-value ">
+                                <div className="values">1,234</div>
                                 <div className="description">Value of Redemption</div>
                                 <div className="charts"></div>
                             </div>
                             <div className="points-redeemed">
-                            <div className="values">3,456</div>
+                                <div className="values">3,456</div>
                                 <div className="description">Points Redeemed</div>
                                 <div className="charts"></div>
                             </div>
@@ -85,22 +85,22 @@ class Home extends Component{
                                     All Time
                                 </button>
                             </div>
-                            <div style={{ display: "grid", margin: "5%" }}>
-                                <div style={{ gridColumn: 1}}>
+                            <div className="sum-disp">
+                                <div className="sum-disp-1" >
                                     <div className="summary-key">Lorem Ipsum</div>
                                     <div className="summary-value">123456789</div>
                                 </div>
-                                <div style={{ gridColumn: 4}}>
+                                <div className="sum-disp-2" >
                                     <div className="summary-key">Lorem Ipsum</div>
                                     <div className="summary-value">123456789</div>
                                 </div>
                             </div>
-                            <div style={{ display: "grid", margin: "5%"}}>
-                                <div style={{ gridColumn: 1}}>
+                            <div className="sum-disp" >
+                                <div className="sum-disp-1" >
                                     <div className="summary-key">Lorem Ipsum</div>
                                     <div className="summary-value">123456789</div>
                                 </div>
-                                <div style={{ gridColumn: 4}}>
+                                <div className="sum-disp-2" >
                                     <div className="summary-key">Lorem Ipsum</div>
                                     <div className="summary-value">123456789</div>
                                 </div>
