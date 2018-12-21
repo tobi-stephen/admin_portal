@@ -10,7 +10,6 @@ class Sidebar extends Component {
         <div className="sidebar-nav">
             <div style={styles.sideDiv}>
                 <div style={styles.sideDivLink}><Link className="sidebar-link" to={"/home"}><i className="fa fa-dashboard" style={{ color: "#9B9B9B"}}></i>  <span>Dashboard</span></Link></div>
-
                 <div style={styles.sideDivLink} className="dropdown"  onClick={() => {
                     let display = document.getElementById("id1");
                     let icon = document.getElementById("idr1")
@@ -30,7 +29,7 @@ class Sidebar extends Component {
                     </Link>
                     <div id="id1" className="dropdown-content"><Link className="sub-sidebar-link" to={"/partners"}><span>Merchant Partners</span></Link></div>
                 </div>
-                <br/>
+                
                 <div  style={styles.sideDivLink} className="dropdown" onClick={() => {
                     let display = document.getElementById("id2");
                     let icon = document.getElementById("idr2")
@@ -83,7 +82,6 @@ class Sidebar extends Component {
                     <div id="id6" className="dropdown-content"><Link className="sub-sidebar-link" to={"/bi_report"}><span>BI</span></Link></div>
                 </div>
                 <div style={styles.sideDivLink}><Link className="sidebar-link" to={"/settings"}><span><i className="fa fa-cog" style={{ color: "#9B9B9B"}}></i>  System Settings</span></Link></div>
-                <div style={{ height:"150px" }}></div>
                 <div  className="sidebar-bottom sidebar-link" style={styles.bottomDiv}>
                     <div><img alt="UBA" src={logo} className="uba-logo"/></div>
                     <span>Copyright 2018 UBA Group PLC.</span>
@@ -98,8 +96,8 @@ class Sidebar extends Component {
 
 const styles = {
     sideDivLink: { fontSize: "17px", marginBottom: "20px"},
-    // bottomDiv: { fontSize: "17px", position: "relative" },
-    // searchButton: { height: "30px", borderRadius: "5px",}
+    bottomDiv: { fontSize: "17px", position: "relative" },
+    searchButton: { height: "30px", borderRadius: "5px",}
 }
 
 export default Sidebar;

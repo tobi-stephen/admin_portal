@@ -50,7 +50,7 @@ class CreatePartner extends Component {
                                 <label for="website">WEBSITE</label>
                                 <input type="text" id="website"></input>
                             </div>
-                            
+                            {/* <div></div> */}
                             <div >
                                 <div style={{float: "left"}}>
                                     <input type="checkbox" name="active" value="Active"/>Active 
@@ -62,12 +62,12 @@ class CreatePartner extends Component {
                                     <input type="checkbox" name="home_delivery" value="Does home delivery"/>Does home delivery
                                 </div>
                             </div>
-                            <div>
-                                <div style={{marginLeft: 0, float: "left", width: "50%"}}>
-                                    <input className="submit" style={{fontSize: "18px", float:"left"}} type="submit" value="Create Discount Partner" />
+                            <div className="partner-action">
+                                <div className="submit-create">
+                                    <input className="submit"  type="submit" value="Create Discount Partner" />
                                 </div>
-                                <div style={{marginLeft: "10%", width: "30%", float: "left"}}>
-                                    <input className="cancel" style={{fontSize: "18px", float: "left"}} type="button" value="Cancel"/>
+                                <div className="cancel-create" >
+                                    <input className="cancel" type="button" value="Cancel"/>
                                 </div>
                             </div>
                         </form>

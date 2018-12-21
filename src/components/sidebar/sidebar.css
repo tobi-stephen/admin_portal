@@ -9,13 +9,13 @@
 .sidebar-nav {
     background-color: #2F2D2E;
     background-size: cover;
-    width: 15%;
+    width: 16%;
     height: 100%;
     left: 0;
     z-index: 1;
     position: fixed;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     padding-left: 2%;
     padding-top: 13%;
 }
@@ -47,7 +47,7 @@
 .dropdown-content {
     position: relative;
     z-index: 1;
-    margin-left: 30px;
+    margin-left: 3em;
     margin-top: 10px;
     display: none;
 }
@@ -57,13 +57,12 @@
 }
 
 .sidebar-bottom {
-    margin-top: 100%;
+    margin-top: 90%;
     font-size: "17px";
 }
 
 @media screen and (max-width: 750px) {
     .sidebar-nav {
-        /* padding-top: 25%; */
         width: 40%;
         position: fixed;
     }
@@ -75,22 +74,46 @@
     }
 }
 
-@media screen and (max-width: 1750px) {
+@media screen and (max-width: 1850px) and (max-height: 700px) {
     .sidebar-nav {
-        /* padding-top: 25%; */
+        padding-top: 15%;
+        width: 15%;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 1750px) and (max-height: 890px) {
+    .sidebar-nav {
+        padding-top: 10%;
         width: 18%;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 1750px) and (max-height: 820px) {
+    .sidebar-nav {
+        padding-top: 5%;
+        width: 18%;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 1750px) and (max-height: 630px) {
+    .sidebar-nav {
+        padding-top: 1%;
+        width: 15%;
         position: fixed;
     }
 }
 
 @media screen and (max-width: 1320px) {
     .sidebar-nav {
-        padding-top: 25%;
+        /* padding-top: 25%; */
         width: 22%;
         position: fixed;
     }
 }
-/* 
+ 
 @media screen and (max-width: 1160px) {
     .sidebar-nav {
         padding-top: 25%;
@@ -99,47 +122,30 @@
     }
 }
 
-@media screen and (max-height: 1160px) {
-    .sidebar-nav {
-        padding-top: 25%;
-        width: 26%;
-        position: fixed;
-    }
-}
-
-@media screen and (max-height: 860px) {
-    .sidebar-bottom {
-        margin-top: 80%;
-    }
-}
-
-@media screen and (max-height: 820px) {
+@media screen and (max-height: 890px) {
     .sidebar-bottom {
         margin-top: 60%;
     }
 }
 
-@media screen and (max-height: 760px) {
+@media screen and (max-height: 800px) {
     .sidebar-bottom {
-        margin-top: 35%;
-    }
-}
-@media screen and (max-height: 700px) {
-    .sidebar-nav {
-        padding-top: 15%;
-        width: 26%;
-        position: fixed;
+        margin-top: 40%;
     }
 }
 
-/* @media screen and (max-height: 560px) {
+@media screen and (max-height: 745px) {
+    .sidebar-bottom {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-height: 720px) {
     .sidebar-nav {
-        padding-top: 15%;
-        width: 26%;
-        position: fixed;
+        padding-top: 13%;
     }
 
     .sidebar-bottom {
-        margin-top: 15%;
+        margin-top: 5%;
     }
-} */ 
+}
