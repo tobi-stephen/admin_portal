@@ -30,7 +30,7 @@ class Sidebar extends Component {
                     </Link>
                     <div id="id1" className="dropdown-content"><Link className="sub-sidebar-link" to={"/partners"}><span>Merchant Partners</span></Link></div>
                 </div>
-
+                <br/>
                 <div  style={styles.sideDivLink} className="dropdown" onClick={() => {
                     let display = document.getElementById("id2");
                     let icon = document.getElementById("idr2")
@@ -84,11 +84,11 @@ class Sidebar extends Component {
                 </div>
                 <div style={styles.sideDivLink}><Link className="sidebar-link" to={"/settings"}><span><i className="fa fa-cog" style={{ color: "#9B9B9B"}}></i>  System Settings</span></Link></div>
                 <div style={{ height:"150px" }}></div>
-                <div  className="sidebar-link" style={styles.bottomDiv}>
+                <div  className="sidebar-bottom sidebar-link" style={styles.bottomDiv}>
                     <div><img alt="UBA" src={logo} className="uba-logo"/></div>
                     <span>Copyright 2018 UBA Group PLC.</span>
                     <br/>
-                    <span >Powered by Interswitch</span>
+                    <span >Powered by <a style={{fontSize: "17px", textDecorationLine: "none", color: "red"}} href={"https://www.interswitchgroup.com/"} >Interswitch</a></span>
                 </div>
             </div>
         </div>
@@ -98,8 +98,8 @@ class Sidebar extends Component {
 
 const styles = {
     sideDivLink: { fontSize: "17px", marginBottom: "20px"},
-    bottomDiv: { fontSize: "17px", position: "relative", bottom: "", },
-    searchButton: { height: "30px", borderRadius: "5px",}
+    // bottomDiv: { fontSize: "17px", position: "relative" },
+    // searchButton: { height: "30px", borderRadius: "5px",}
 }
 
 export default Sidebar;

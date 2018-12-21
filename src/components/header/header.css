@@ -64,3 +64,27 @@
 .drop-down:hover .drop-down-content {
     display: block;
 }
+
+@media screen and (max-height: 620px) {
+    .rewards-portal {
+        height: 8%;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .rewards-portal {
+        height: 10%;
+    }
+}
+
+@media screen and (max-height: 360px) {
+    .rewards-portal {
+        height: 12%;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    .rewards-portal {
+        height: 14%;
+    }
+}
