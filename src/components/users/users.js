@@ -14,14 +14,15 @@ class Users extends Component {
         let userList = [];
         for (let i = 0; i < 15; i++){
             userList.push(
-                <div className="settings-content users-content">
-                    <div>10</div>
-                    <div>Remilekun</div>
-                    <div>Remilekun</div>
-                    <div>abcdefg@yahoo.com</div>
-                    <div>09023445543</div>
-                    <div>{new Date("October 21 2017").toLocaleDateString()}</div>
-                </div>
+                <tr className="bordered">
+                    <td>10</td>
+                    <td>Remilekun</td>
+                    <td>Chibundu</td>
+                    <td>istwester@yahoo.com</td>
+                    <td>08078123456</td>
+                    <td>{new Date("October 21 2017").toUTCString().substr(5, 11)}</td>
+                    <td><i className="fa fa-ellipsis-h"></i></td>
+                </tr>
             )
         }
 
@@ -63,6 +64,7 @@ class Users extends Component {
                                 <th>Joined</th>
                                 <th></th>
                             </tr>
+                            {/* {this.listUsers()} */}
                             <tr className="bordered">
                                 <td>10</td>
                                 <td>Remilekun</td>

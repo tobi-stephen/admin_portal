@@ -10,37 +10,37 @@ class Home extends Component{
         let cv = ["canvas1", "canvas2", "canvas3", "canvas4"];
         let col = ["rgb(226, 17, 17)", "rgb(96, 226, 113)", "rgb(65, 156, 144)", "rgb(141, 18, 145)"]
         
-        // for (let i = 0; i < cv.length; ++i){
-        //     let ctx = document.getElementById(cv[i]);
-        //     ctx = ctx.getContext("2d");
-        //     ctx.beginPath();
-        //     ctx.moveTo(20, 100)
-        //     ctx.quadraticCurveTo(40, 100, 40, 90);
-        //     ctx.quadraticCurveTo(40, 80, 50, 80);
-        //     ctx.lineTo(65, 105);
-        //     ctx.quadraticCurveTo(75, 110, 120, 60)
-        //     ctx.quadraticCurveTo(140, 65, 140, 100)
-        //     ctx.quadraticCurveTo(140, 160, 200, 120)
-        //     ctx.strokeStyle = col[i];
-        //     ctx.lineWidth = 3;
-        //     ctx.stroke();
-        // }
+        for (let i = 0; i < cv.length; ++i){
+            let ctx = document.getElementById(cv[i]);
+            ctx = ctx.getContext("2d");
+            ctx.beginPath();
+            ctx.moveTo(20, 100)
+            ctx.quadraticCurveTo(40, 100, 40, 90);
+            ctx.quadraticCurveTo(40, 80, 50, 80);
+            ctx.lineTo(65, 105);
+            ctx.quadraticCurveTo(75, 110, 120, 60)
+            ctx.quadraticCurveTo(140, 65, 140, 100)
+            ctx.quadraticCurveTo(140, 160, 200, 120)
+            ctx.strokeStyle = col[i];
+            ctx.lineWidth = 3;
+            ctx.stroke();
+        }
         
-        // let sumcv = document.getElementById("summary-canvas");
-        // let ctx = sumcv.getContext("2d");
-        // ctx.beginPath();
-        // ctx.moveTo(0, 80)
-        // ctx.lineTo(100, 0);
-        // ctx.lineTo(200, 50);
-        // ctx.lineTo(300, 10);
-        // ctx.moveTo(300, 10);
-        // ctx.lineTo(400, 100);
-        // ctx.lineTo(500, 120);
-        // ctx.lineTo(586, 25);
-        // ctx.fillStyle="red";
-        // ctx.fill()
-        // ctx.strokeStyle =  "grey"
-        // ctx.stroke();
+        let sumcv = document.getElementById("summary-canvas");
+        let ctx = sumcv.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(0, 80)
+        ctx.lineTo(100, 0);
+        ctx.lineTo(200, 50);
+        ctx.lineTo(300, 10);
+        ctx.moveTo(300, 10);
+        ctx.lineTo(400, 100);
+        ctx.lineTo(500, 120);
+        ctx.lineTo(586, 25);
+        ctx.fillStyle="red";
+        ctx.fill()
+        ctx.strokeStyle =  "grey"
+        ctx.stroke();
     }
 
 
@@ -153,7 +153,8 @@ class Home extends Component{
                                 </div>
                             </div>
                             <div className="summary-chart">
-                                <canvas width={"680"} id="summary-canvas" ref="summarycanvas" style={{paddingTop: "50px"}}></canvas></div>
+                                <canvas width={"680"} id="summary-canvas" ref="summarycanvas" style={{paddingTop: "50px"}}></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
