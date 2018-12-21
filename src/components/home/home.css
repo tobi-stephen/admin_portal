@@ -241,6 +241,9 @@
         margin: 3% 0 3% 0
     }
     
+    .charts {
+        margin-top: 100px;
+    }
     .customers {
         border-bottom: solid rgb(226, 17, 17);
     }
