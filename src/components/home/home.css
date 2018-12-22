@@ -232,10 +232,6 @@
     }
     
     .customers, .redemption-value, .points-redeemed, .cash-spend{
-        background-color: #FFFFFF;
-        border-bottom: 3px;
-        border: 0.5px solid rgb(211, 194, 194);
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         height:60%;
         width: 100%;
         margin: 3% 0 3% 0
@@ -243,21 +239,6 @@
     
     .charts {
         margin-top: 100px;
-    }
-    .customers {
-        border-bottom: solid rgb(226, 17, 17);
-    }
-    
-    .redemption-value {
-        border-bottom: solid rgb(96, 226, 113);
-    }
-    
-    .points-redeemed {
-        border-bottom: solid rgb(65, 156, 144);
-    }
-    
-    .cash-spend {
-        border-bottom: solid rgb(141, 18, 145);
     }
 
     .summary {
