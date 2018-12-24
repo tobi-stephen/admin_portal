@@ -12,7 +12,7 @@ class Pagination extends Component {
                     <i className="fa fa-caret-right"></i>
                 </div>
                 <div className="pagination-right">
-                    Download: <span>CSV XML JSON</span>
+                    Download: <button>CSV XML JSON</button>
                 </div>
             </div>
         )

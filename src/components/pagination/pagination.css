@@ -1,3 +1,51 @@
 .pagination {
-    /* margin-top: 40%; */
+    display: grid;
+    font-size: 18px;
+    padding: 20px;
+    width: 100%;
+}
+
+.pagination-left {
+    grid-column: 1;
+}
+
+.pagination-mid {
+    grid-column: 5;
+}
+
+.pagination-mid i {
+    border: 0.5px thin rgb(211, 194, 194);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    margin: 0 40px;
+}
+.pagination-right {
+    grid-column: 10;
+}
+
+.pagination-right button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width: 1330px) {
+    .pagination-mid i {
+        margin: 0 10px
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .pagination {
+        display: block;
+        padding: 20px;
+    }
+    
+    .pagination-left, .pagination-mid, .pagination-right{
+        text-align: center;
+        margin: 10px;
+    }
 }
