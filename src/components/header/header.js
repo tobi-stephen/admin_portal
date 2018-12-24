@@ -13,12 +13,19 @@ class Header extends Component {
         let m = document.getElementById("main-nav");
         if (s.style.display !== "none"){
             s.style.display = "none";
-            m.style.marginLeft = "3%";
+            m.style.margin = "3%";
         }
         else{
+            let w = window.innerWidth
+            console.log(w)
+            if (w < 720){
+                m.style.marginLeft = (350).toString() + "px";
+            }
+            else
+                m.style.marginLeft = (400).toString() + "px";
             s.style.display = "block";
             s.style.transition = "margin-left .5s";
-            m.style.marginLeft = "25%";
+            
         }
              
     }
