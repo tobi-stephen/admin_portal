@@ -15,7 +15,7 @@ class Partners extends Component {
             <div>
                 <Header />
                 <Sidebar />
-                <div className="main">
+                <div  id="main-nav" className="main">
                     <div className="heading">Merchant Partners</div>
                     <div className="partners">
                         {this.state.partnerIsAvailable ? 

@@ -9,7 +9,7 @@ class CreatePartner extends Component {
             <div>
                 <Header />
                 <Sidebar />
-                <div className="main">
+                <div id="main-nav" className="main">
                     <div className="main-top">
                         <div className="heading">Merchant Partners</div>
                     </div>
@@ -50,7 +50,6 @@ class CreatePartner extends Component {
                                 <label for="website">WEBSITE</label>
                                 <input type="text" id="website"></input>
                             </div>
-                            {/* <div></div> */}
                             <div >
                                 <div style={{float: "left"}}>
                                     <input type="checkbox" name="active" value="Active"/>Active 

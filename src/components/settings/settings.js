@@ -9,7 +9,7 @@ class Settings extends Component {
             <div>
                 <Header />
                 <Sidebar />
-                <div className="main">
+                <div id="main-nav" className="main">
                     <div className="main-top">
                         <div className="heading settings-head">System Settings</div>
                     </div>

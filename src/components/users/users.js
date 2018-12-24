@@ -36,7 +36,7 @@ class Users extends Component {
             <div>
                 <Header />
                 <Sidebar />
-                <div  className="main">
+                <div id="main-nav" className="main">
                     <Maintop screen={"Users"}/>
                     <div className="settings">
                         <table style={{width: "100%"}}>
@@ -71,7 +71,7 @@ class Users extends Component {
                                 </tr>
                             </tbody>
                         </table>
-
+                        
                     </div>
                     <Pagination />
                 </div>

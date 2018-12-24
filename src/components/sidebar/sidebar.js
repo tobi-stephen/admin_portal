@@ -7,7 +7,7 @@ class Sidebar extends Component {
 
     render(){
     return(
-        <div className="sidebar-nav">
+        <div id="sidebar-nav" className="sidebar-nav">
             <div style={styles.sideDiv}>
                 <div style={styles.sideDivLink}><Link className="sidebar-link" to={"/home"}><i className="fa fa-dashboard" style={{ color: "#9B9B9B"}}></i>  <span>Dashboard</span></Link></div>
                 <div style={styles.sideDivLink} className="dropdown"  onClick={() => {
@@ -23,7 +23,7 @@ class Sidebar extends Component {
                     }
                 }}>
                     <Link className="sidebar-link" to={"#"}>
-                        <i className="fa fa-file" style={{ color: "#9B9B9B"}}></i>  <span>Content Management</span>
+                        <i className="fa fa-file" style={{ color: "#9B9B9B" }}></i>  <span>Content Management</span>
                         <i id="idr1" style={{position: "relative", left: "20%"}} className="fa fa-angle-right"></i>
                     </Link>
                     <div id="id1" className="dropdown-content"><Link className="sub-sidebar-link" to={"/partners"}><span>Merchant Partners</span></Link></div>

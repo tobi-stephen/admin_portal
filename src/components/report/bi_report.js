@@ -11,7 +11,7 @@ class BIReport extends Component {
             <div>
                 <Header />
                 <Sidebar />
-                <div  className="main">
+                <div id="main-nav" className="main">
                     <Maintop screen="BI Report" />
                     <div className="settings">
                         <table style={{ width:"100%" }}>

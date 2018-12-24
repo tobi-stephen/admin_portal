@@ -6,10 +6,22 @@ import './header.css';
 class Header extends Component {
     state = { toLogin: false}
 
-    // onclick = (event) => {
-    //     event.preventDefault()
-    //     this.setState({toLogin: true})
-    // }
+    onclick = (event) => {
+        event.preventDefault()
+
+        let s = document.getElementById("sidebar-nav");
+        let m = document.getElementById("main-nav");
+        if (s.style.display !== "none"){
+            s.style.display = "none";
+            m.style.marginLeft = "3%";
+        }
+        else{
+            s.style.display = "block";
+            s.style.transition = "margin-left .5s";
+            m.style.marginLeft = "25%";
+        }
+             
+    }
 
     render(){
         return(
@@ -18,6 +30,7 @@ class Header extends Component {
                 (<Redirect to={"/login"} />)
                 :
                 <div className="rewards-portal">
+                    <button onClick={this.onclick} className="menu-bars"><i className="fa fa-bars" ></i></button>
                     <Link to={"/home"}>
                         <img alt="Rewards Portal" src={rewards} className="rewards-logo"/>
                     </Link>

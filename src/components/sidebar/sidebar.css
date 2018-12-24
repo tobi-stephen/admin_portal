@@ -15,9 +15,9 @@
     z-index: 1;
     position: fixed;
     overflow-x: hidden;
-    /* overflow-y: hidden; */
     padding-left: 2%;
     padding-top: 13%;
+    display: block;
 }
 
 .sidebar-nav a:focus {
@@ -61,7 +61,6 @@
 }
 
 .sidebar-bottom {
-    margin-top: 90%;
     font-size: 17px;
 }
 
@@ -112,7 +111,6 @@
 
 @media screen and (max-width: 1320px) {
     .sidebar-nav {
-        /* padding-top: 25%; */
         width: 22%;
         position: fixed;
     }
@@ -151,5 +149,12 @@
 
     .sidebar-bottom {
         margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .sidebar-nav {
+        display: block;
+        width: 40%;
     }
 }

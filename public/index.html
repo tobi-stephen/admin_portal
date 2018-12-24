@@ -19,6 +19,13 @@
         body {
             font-family: "icomoon";
         }
+
+        @media print {
+            tr.page-break {
+                display: block;
+                page-break-after: always;
+            }
+        }
     </style>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.

@@ -69,6 +69,37 @@
     display: block;
 }
 
+.menu-bars {
+    margin: 1% 0 3%;
+        border: none;
+        height: 30px;
+        width: 30px;
+        float: left;
+        display:block;
+        cursor: pointer;
+}
+
+.fa-bars {
+    font-size: 25px;
+    
+}
+
+@media screen and (max-width: 750px){
+    .menu-bars {
+        margin: 1% 0 3%;
+        border: none;
+        height: 30px;
+        width: 30px;
+        float: left;
+        display:block;
+        cursor: pointer;
+    }
+
+    .fa-bars {
+        font-size: 25px;
+    }
+
+}
 @media screen and (max-height: 620px) {
     .rewards-portal {
         height: 8%;

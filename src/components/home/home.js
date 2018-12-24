@@ -48,7 +48,7 @@ class Home extends Component{
             <div>
                 <Header />
                 <Sidebar />
-                <div className="main">
+                <div id="main-nav" className="main">
                     <Maintop screen="Dashboard"/>
                     <div className="main-below">
                         <div className="section-1">
@@ -88,7 +88,7 @@ class Home extends Component{
                                 <button 
                                     id={"#id1"}
                                     type={"button"}
-                                    style={{ gridColumn: 6, fontSize: "20px", height: "40px", color: "white", borderRadius:"25px", border: "none", backgroundColor: "#C82B1D"}}
+                                    style={{gridColumn:6, fontSize: "20px", height: "40px", border: "none", borderRadius:"25px", backgroundColor: "white" }}
                                     onClick={()=>{
                                         let id1 = document.getElementById("#id1")
                                         let id2 = document.getElementById("#id2")
@@ -101,7 +101,7 @@ class Home extends Component{
                                     </button>
                                 <button 
                                     id={"#id2"}
-                                    style={{gridColumn:7, fontSize: "20px", height: "40px", border: "none", borderRadius:"25px", backgroundColor: "white" }}
+                                    style={{ gridColumn: 7, fontSize: "20px", height: "40px", color: "white", borderRadius:"25px", border: "none", backgroundColor: "#C82B1D"}}
                                     onClick={()=>{
                                         let id1 = document.getElementById("#id1")
                                         let id2 = document.getElementById("#id2")

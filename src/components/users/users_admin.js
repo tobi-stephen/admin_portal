@@ -14,7 +14,7 @@ class AdminUser extends Component {
             <div>
                 <Header />
                 <Sidebar />
-                <div  className="main">
+                <div id="main-nav" className="main">
                     <Maintop screen={"Admin User"} />
                     <div className="settings">
                         <table style={{width:"100%"}}>
@@ -27,7 +27,7 @@ class AdminUser extends Component {
                                     <th>Status</th>
                                     <th></th>
                                 </tr>
-                                <tr className="bordered">
+                                <tr className="page-break bordered">
                                     <td>abcefgh@yahoo.ng</td>
                                     <td>Super Admin</td>
                                     <td>{this.d.toUTCString().substr(5, 17)}</td>
@@ -36,7 +36,7 @@ class AdminUser extends Component {
                                     <td><i className="fa fa-ellipsis-h"></i></td>
                                 </tr>
                                 {/* <br /> */}
-                                <tr className="bordered">
+                                <tr className="page-break bordered">
                                     <td>oluwatayo.alofun@interswitchgroup.ng</td>
                                     <td>Super Admin</td>
                                     <td>{this.d.toUTCString().substr(5, 17)}</td>

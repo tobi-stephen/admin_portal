@@ -16,6 +16,7 @@ table {
     border-collapse: collapse;
     border-spacing: 1em;
     font-size: 18px;
+    color: #9B9B9B;
 }
 
 tr {
@@ -25,7 +26,6 @@ tr {
  tr.bordered  {
     border-collapse: collapse;
     height: auto;
-    
     border:1pt solid #C0C0C0;
 }
 
