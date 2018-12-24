@@ -3,6 +3,7 @@ import Sidebar from '../sidebar/sidebar';
 import Header from '../header/header';
 import './users.css';
 import Maintop from '../main_top';
+import Pagination from '../pagination/pagination';
 
 class AdminUser extends Component {
 
@@ -46,6 +47,7 @@ class AdminUser extends Component {
                             </tbody>
                         </table>
                     </div>
+                    <Pagination />
                 </div>
             </div>
         )

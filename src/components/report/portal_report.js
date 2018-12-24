@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Sidebar from '../sidebar/sidebar';
 import Header from '../header/header';
 import Maintop from '../main_top';
+import Pagination from '../pagination/pagination';
 
 class PortalReport extends Component {
 
@@ -73,10 +74,9 @@ class PortalReport extends Component {
                                     <td><i className="fa fa-ellipsis-h"></i></td>
                                 </tr>
                             </tbody>
-                            {/* {this.listUsers()} */}
                         </table>
                     </div>
-
+                    <Pagination />
                 </div>
                 
             </div>

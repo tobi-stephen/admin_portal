@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Sidebar from '../sidebar/sidebar';
 import Header from '../header/header';
 import Maintop from '../main_top';
+import Pagination from '../pagination/pagination';
 
 class BIReport extends Component {
 
@@ -46,6 +47,7 @@ class BIReport extends Component {
                             </tbody>
                         </table>
                     </div>
+                    <Pagination />
                 </div>
                 
             </div>

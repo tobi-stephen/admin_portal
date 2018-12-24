@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Sidebar from '../sidebar/sidebar';
 import Header from '../header/header';
 import Maintop from '../main_top';
+import Pagination from '../pagination/pagination';
 
 class RedemptionReport extends Component {
 
@@ -48,7 +49,7 @@ class RedemptionReport extends Component {
                         </table>
                     </div>
                 </div>
-                
+                <Pagination />
             </div>
         )
     }
