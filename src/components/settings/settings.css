@@ -19,6 +19,12 @@ table {
     color: #9B9B9B;
 }
 
+tr.break td {
+    height: 8px;
+    margin-top: 0;
+    padding: 0;
+}
+
 tr {
     margin-top: 100px;
 }

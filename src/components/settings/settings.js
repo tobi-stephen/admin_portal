@@ -22,7 +22,7 @@ class Settings extends Component {
                                     <th>Max UBA Policies Per User</th>
                                     <th>Created At</th>
                                     <th>Updated At</th>
-                                    <th></th>
+                                    <th>&nbsp;</th>
                                 </tr>
                                 <tr className="bordered">
                                     <td>0.2</td>

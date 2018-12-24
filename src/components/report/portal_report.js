@@ -37,7 +37,7 @@ class PortalReport extends Component {
                                     <td>{new Date("October 21 2017").toUTCString().substr(5, 11)}</td>
                                     <td><i className="fa fa-ellipsis-h"></i></td>
                                 </tr>
-                                {/* <br /> */}
+                                <tr className="break"><td></td></tr>
                                 <tr className="bordered" style={{height: "100%", paddingBottom: "15px"}}>
                                     <td>10</td>
                                     <td>Remilekun</td>

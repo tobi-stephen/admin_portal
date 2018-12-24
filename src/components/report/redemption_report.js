@@ -35,7 +35,7 @@ class RedemptionReport extends Component {
                                     <td>{new Date("October 21 2017").toUTCString().substr(5, 11)}</td>
                                     <td><i className="fa fa-ellipsis-h"></i></td>
                                 </tr>
-                                {/* <br /> */}
+                                <tr className="break"><td></td></tr>
                                 <tr className="bordered">
                                     <td>Airtime</td>
                                     <td>500</td>
