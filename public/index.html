@@ -47,4 +47,21 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    window.onclick = function(event) {
+        if (!event.target.matches('.date-dropbtn')) {
+            var dropdowns = document.getElementsByClassName("date-dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                
+                if (openDropdown.classList.contains('show')) {
+                    console.log(openDropdown.classList.contains('show'))
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+    </script>
+
 </html>

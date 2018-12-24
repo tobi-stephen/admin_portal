@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './home.css';
 import Sidebar from '../sidebar/sidebar';
 import Header from '../header/header';
+import Maintop from '../main_top';
 
 class Home extends Component{
-    d = new Date()
-    
+
     componentDidMount() {
         let cv = ["canvas1", "canvas2", "canvas3", "canvas4"];
         let col = ["rgb(226, 17, 17)", "rgb(96, 226, 113)", "rgb(65, 156, 144)", "rgb(141, 18, 145)"]
@@ -43,31 +43,13 @@ class Home extends Component{
         ctx.stroke();
     }
 
-
     render(){
         return(
             <div>
                 <Header />
                 <Sidebar />
                 <div className="main">
-                    <div className="main-top">
-                        <div className="heading">Dashboard</div>
-                        <div className="date-style">
-                            <select className="date-section">
-                                <option value="1">Today: {this.d.getDate()} {this.d.toString().substr(4,4)}</option>
-                                <option value="2">Yesterday</option>
-                                <option value="3">Last 7 Days</option>
-                                <option value="4">Last 30 Days</option>
-                                <option value="5">This Month</option>
-                                <option value="6">Last Month</option>
-                                <option value="7">Custom Range</option>
-                            </select>
-                        </div>
-                        <div className="search">
-                            <span className="fa fa-search"></span>
-                            <input type="search" style={{fontSize: 18}} placeholder="Search" />
-                        </div>
-                    </div>
+                    <Maintop screen="Dashboard"/>
                     <div className="main-below">
                         <div className="section-1">
                             <div className="customers">

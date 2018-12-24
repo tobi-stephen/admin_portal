@@ -22,20 +22,20 @@ class Header extends Component {
                         <img alt="Rewards Portal" src={rewards} className="rewards-logo"/>
                     </Link>
                     <div className="icon-right">
-                        <div style={{margin:10}} class="fa-stack fa-sm drop-down">
+                        <div style={{margin:10}} className="fa-stack fa-sm drop-down">
                             <div className="drop-btn">
                                 <Link to={"#"}>
-                                    <i class="fa fa-bell fa-stack-1x"></i>
+                                    <i className="fa fa-bell fa-stack-1x"></i>
                                 </Link>
                             </div>
                             <div className="drop-down-content">
                                 <Link to={"#"}>No Notifications</Link>
                             </div>
                         </div>
-                        <div class="fa-stack fa-sm drop-down">
+                        <div className="fa-stack fa-sm drop-down">
                             <div className="drop-btn">
                                 <Link to={"#"}>
-                                    <i class="fa fa-user fa-stack-1x"></i>
+                                    <i className="fa fa-user fa-stack-1x"></i>
                                 </Link>
                             </div>
                             <div className="drop-down-content">

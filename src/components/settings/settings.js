@@ -15,22 +15,24 @@ class Settings extends Component {
                     </div>
                     <div className="settings">
                         <table style={{width:"100%"}}>
-                            <tr>
-                                <th>First Points Conversion Rate</th>
-                                <th>Max Bank Account Per User</th>
-                                <th>Max UBA Policies Per User</th>
-                                <th>Created At</th>
-                                <th>Updated At</th>
-                                <th> </th>
-                            </tr>
-                            <tr className="bordered">
-                                <td>0.2</td>
-                                <td>3</td>
-                                <td>1</td>
-                                <td>{new Date("October 21 2017").toUTCString().substr(5, 11)}</td>
-                                <td>{new Date("October 21 2017").toUTCString().substr(5, 11)}</td>
-                                <td><i className="fa fa-ellipsis-v"></i></td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th>First Points Conversion Rate</th>
+                                    <th>Max Bank Account Per User</th>
+                                    <th>Max UBA Policies Per User</th>
+                                    <th>Created At</th>
+                                    <th>Updated At</th>
+                                    <th></th>
+                                </tr>
+                                <tr className="bordered">
+                                    <td>0.2</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>{new Date("October 21 2017").toUTCString().substr(5, 11)}</td>
+                                    <td>{new Date("October 21 2017").toUTCString().substr(5, 11)}</td>
+                                    <td><i className="fa fa-ellipsis-v"></i></td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>

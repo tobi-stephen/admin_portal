@@ -14,6 +14,7 @@ th, td {
 
 table {
     border-collapse: collapse;
+    border-spacing: 1em;
     font-size: 18px;
 }
 

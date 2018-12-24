@@ -21,7 +21,6 @@ class Sidebar extends Component {
                         display.style.display =   "block";
                         icon.className = "fa fa-angle-down"
                     }
-                    console.log(display.style.display)
                 }}>
                     <Link className="sidebar-link" to={"#"}>
                         <i className="fa fa-file" style={{ color: "#9B9B9B"}}></i>  <span>Content Management</span>
@@ -82,7 +81,7 @@ class Sidebar extends Component {
                     <div id="id6" className="dropdown-content"><Link className="sub-sidebar-link" to={"/bi_report"}><span>BI</span></Link></div>
                 </div>
                 <div style={styles.sideDivLink}><Link className="sidebar-link" to={"/settings"}><span><i className="fa fa-cog" style={{ color: "#9B9B9B"}}></i>  System Settings</span></Link></div>
-                <div  className="sidebar-bottom sidebar-link" style={styles.bottomDiv}>
+                <div  className="sidebar-bottom sidebar-link">
                     <div><img alt="UBA" src={logo} className="uba-logo"/></div>
                     <span>Copyright 2018 UBA Group PLC.</span>
                     <br/>
@@ -96,8 +95,6 @@ class Sidebar extends Component {
 
 const styles = {
     sideDivLink: { fontSize: "17px", marginBottom: "20px"},
-    bottomDiv: { fontSize: "17px", position: "relative" },
-    searchButton: { height: "30px", borderRadius: "5px",}
 }
 
 export default Sidebar;
