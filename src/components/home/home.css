@@ -78,10 +78,10 @@ button:focus  {
     padding: 6px 16px;
     display: block;
     margin: 12px;
-    cursor: pointer;
+    cursor: default;
 }
 
-.date-dropdown p:hover, .date-dropdown p:focus{
+.date-dropdown p:hover, .date-picked {
     background-color: black;
     color: white;
     border-radius: 4px;
