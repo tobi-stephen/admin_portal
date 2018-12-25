@@ -16,7 +16,7 @@
     position: fixed;
     overflow-x: hidden;
     padding-left: 2%;
-    padding-top: 10%;
+    padding-top: 150px;
     display: block;
 }
 
@@ -63,38 +63,3 @@
 .sidebar-bottom {
     font-size: 17px;
 }
-
-
-@media screen and (max-width: 1850px) and (max-height: 700px) {
-    .sidebar-nav {
-        padding-top: 15%;
-    }
-}
-
-@media screen and (max-width: 1750px) and (max-height: 890px) {
-    .sidebar-nav {
-        padding-top: 10%;
-    }
-}
-
-@media screen and (max-width: 1750px) and (max-height: 820px) {
-    .sidebar-nav {
-        padding-top: 5%;
-    }
-}
-
-@media screen and (max-width: 1750px) and (max-height: 630px) {
-    .sidebar-nav {
-        padding-top: 2%;
-    }
-}
-
-@media screen and (max-width: 1160px) {
-    .sidebar-nav {
-        padding-top: 15%;
-    }
-}
-
-
-
-

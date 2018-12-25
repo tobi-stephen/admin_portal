@@ -1,9 +1,10 @@
 
 .main {
-    padding-top: 7%;
+    padding-top: 100px;
     margin-left: 400px;
     margin-right:8%;
     position: relative;
+    width: auto;
 }
 
 .main-top {
@@ -200,7 +201,7 @@ button:focus  {
 }
 
 .values {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
     margin-top: 15%;
     margin-left: 10%
@@ -223,15 +224,15 @@ button:focus  {
 }
  
 .summary-key{
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 500;
     margin-top: 4%;
     margin-bottom: 2%;
 }
 
 .summary-value{
-    font-size: 24px;
-    font-weight: 800
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .sum-disp {
@@ -253,9 +254,20 @@ button:focus  {
         width: 500px;
     }
 }
+
+@media screen and (max-width: 1450px) {
+    .charts canvas {
+        width: 200px;
+    }
+
+    .summary-chart canvas {
+        width: 400px;
+    }
+}
+
 @media screen and (max-width: 1350px) {
     .values {
-        font-size: 30px;
+        font-size: 22px;
         margin-top: 2%;
     }
 
@@ -271,30 +283,22 @@ button:focus  {
     }
 }
 
-@media screen and (max-width: 1320px) {
-    .main {
-        padding-top: 7%;
-        margin-left: 32%;
-        margin-right:8%;
-        position: relative;
+@media screen and (max-width: 1250px) {
+
+    .summary-chart canvas {
+        width: 300px;
     }
 }
 
 @media screen and (max-width: 1160px) {
-    .main {
-        padding-top: 10%;
-        margin-left: 32%;
-        margin-right:8%;
-        position: relative;
-    }
 
     .values {
-        font-size: 28px;
+        font-size: 20px;
         margin-top: 2%;
     }
 
     .description {
-        font-size: 19px;
+        font-size: 17px;
         font-weight: 500;
     }
 }
@@ -302,26 +306,12 @@ button:focus  {
 
 @media screen and (max-width: 1050px) {
     .main {
-        margin-right: 20px;
-    }
-    .main-top {
-        display: inline-flex;
-        margin-right: 0;
-        width: 100%;
+        margin-right: 0px;
     }
     
-    .heading {
-        flex: 1;
-    }
-
-    .date-style {
-        flex: 2;
-    }
-
-    .search {
-        flex: 4;
-        margin-right: 0px;
-
+    .main-top {
+        display: flex;
+        width: 100%
     }
 
     .main-below {
@@ -341,26 +331,7 @@ button:focus  {
         opacity: 0.6111865942028986;
         width: 100%;
     }
-}
 
-@media screen and (max-width: 1450px) {
-    .charts canvas {
-        width: 200px;
-    }
-
-    .summary-chart canvas {
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-
-    .summary-chart canvas {
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 1050px) {
     .charts canvas {
         width: 350px;
     }
@@ -371,10 +342,16 @@ button:focus  {
 }
 
 @media screen and (max-width: 750px) {
+    .main {
+        margin: 3%;
+    }
+    
+    #sidebar-nav {
+        display: none;
+    }
+
     .main-top {
-        display: flex;
         flex-direction: column;
-        margin-top: 20%;
     }
 
     .search {
@@ -411,12 +388,5 @@ button:focus  {
         display: flex;
         flex-direction: column;
         margin: 5%;
-    }
-
-    .main {
-        padding-top: 7%;
-        margin-left: 45%;
-        margin-right:6%;
-        position: relative;
     }
 }

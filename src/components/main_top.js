@@ -108,7 +108,7 @@ class Maintop extends Component
                 &nbsp;&nbsp;
                 <div className="date-style">
                     <div className="date-dropdown">
-                        <button onClick={this._onclick} className="date-dropbtn">{this.state.dateToggle} &nbsp; <i className="date-dropbtn fa fa-angle-down"></i></button>
+                        <button onClick={this._onclick} className=" date-dropbtn">{this.state.dateToggle} &nbsp; <i className="date-dropbtn fa fa-angle-down"></i></button>
                         <div id="date-mydropdown" className="date-dropdown-content">
                             <p className="date-picked" onClick={(event) => this._dateToggle("Today",event)}>Today</p>
                             <p onClick={(event) => this._dateToggle("Yesterday", event)}>Yesterday</p>
