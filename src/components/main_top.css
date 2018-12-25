@@ -1,0 +1,17 @@
+.custom-range-content {
+    margin: 0 18px;
+}
+
+.custom-range-content p{
+    cursor: default;
+    background-color: #F1F1F1;
+}
+
+.custom-range-content p:hover{
+    /* display: none; */
+    /* margin: 0 24px; */
+    /* background: none; */
+    color: black;
+    background-color: #F1F1F1;
+
+}

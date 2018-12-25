@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './main_top.css';
 
 class Maintop extends Component
 {
@@ -10,11 +11,22 @@ class Maintop extends Component
             title: this.props.screen,
             dateToggle: tm,
             temp: tm,
+            start: "",
+            stop: "",
         }
     }
 
     _onclick = () => {
         document.getElementById("date-mydropdown").classList.toggle("show");
+    }
+
+    componentDidMount() {
+
+        //Display hack for the custom range date
+        let cr = document.getElementById("custom-range-content").childNodes;
+        for (let i = 0; i < cr.length; i++){
+            cr[i].style.display = "none";
+        }
     }
 
     _dateToggle = async (dateToggle, event=0) => {
@@ -32,14 +44,52 @@ class Maintop extends Component
         document.getElementById("date-mydropdown")
         
         this.setState({temp: dateToggle})
+        if (dateToggle === "Custom Range"){
+            let cr = document.getElementById("custom-range-content").childNodes;
+            for (let i = 0; i < cr.length; i++){
+                if (cr[i].style.display !== "block")
+                    cr[i].style.display = "block";
+                else 
+                    cr[i].style.display = "none";
+            }
+        }
     }
 
     _applyDateToggle = () => {
+
+        let cr = document.getElementById("custom-range-content").childNodes;
+        for (let i = 0; i < cr.length; i++){
+            cr[i].style.display = "none";
+        }
+
         let temp = this.state.temp;
         let d = new Date()
         if (temp === "Today")
             temp = `Today: ${d.getDate()} ${d.toString().substr(4,4)}`;
+        if (temp === "Custom Range"){
+            console.log(this.state.start)
+            let start = "";
+            if (this.state.start){
+                let d = new Date(this.state.start);
+                start = `${d.getDate()} ${d.toString().substr(4,4)}`
+            } else {
+                alert("Specify a start period")
+                return
+            }
+
+            let stop = "";
+            if (this.state.stop){
+                let d = new Date(this.state.stop);
+                stop = `${d.getDate()} ${d.toString().substr(4,4)}`;
+            } else {
+                alert("Specify a stop period")
+                return
+            }
+            
+            temp = `Custom Range: ${start} - ${stop}`;
+        }
         this.setState({dateToggle: temp})
+        console.log(this.state.dateToggle)
     }
 
     _cancelDateToggle = () => {
@@ -66,7 +116,25 @@ class Maintop extends Component
                             <p onClick={(event) =>  this._dateToggle("Last 30 Days", event)}>Last 30 Days</p>
                             <p onClick={(event) => this._dateToggle("This Month", event)}>This Month</p>
                             <p onClick={(event) => this._dateToggle("Last Month", event)}>Last Month</p>
-                            <p onClick={(event) => this._dateToggle("Custom Range", event)}>Custom Range</p>
+                            <p className="custom-range" onClick={(event) => this._dateToggle("Custom Range", event)}>Custom Range</p>
+                            <div id="custom-range-content" className="custom-range-content">
+                                <p>
+                                    Start:&nbsp;
+                                    <input type="date" max={"2018-12-30"}
+                                        onInput={(val) => {
+                                            // console.log(val.target.value)
+                                            this.setState({start: val.target.value})
+                                        }} />
+                                </p>
+                                <p>
+                                    Stop:&nbsp;
+                                    <input type="date" max={"2018-12-30"}
+                                        onInput={(val) => {
+                                            // console.log(val.target.value)
+                                            this.setState({stop: val.target.value})
+                                        }} />
+                                </p>
+                            </div>
                             <div>
                                 <button onClick={this._applyDateToggle}>Apply</button>
                                 <button onClick={this._cancelDateToggle}>Cancel</button>
