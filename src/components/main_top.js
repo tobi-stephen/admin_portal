@@ -27,12 +27,8 @@ class Maintop extends Component
             }
             event.target.classList.toggle("date-picked")
             event.preventDefault()
-            
-        
         }
-        let d = new Date()
-        if (dateToggle === "Today")
-            dateToggle = `Today: ${d.getDate()} ${d.toString().substr(4,4)}`;
+        
         document.getElementById("date-mydropdown")
         
         this.setState({temp: dateToggle})
@@ -40,6 +36,9 @@ class Maintop extends Component
 
     _applyDateToggle = () => {
         let temp = this.state.temp;
+        let d = new Date()
+        if (temp === "Today")
+            temp = `Today: ${d.getDate()} ${d.toString().substr(4,4)}`;
         this.setState({dateToggle: temp})
     }
 

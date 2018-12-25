@@ -96,12 +96,17 @@ button:focus  {
     cursor: pointer;
     padding: 6px 16px;
     margin: 12px 10px;
+    transition: 0.3s;
 }
 
 .date-dropdown-content button:nth-child(1) {
     background-color: red;
     color: white;
     border-color: red;
+}
+
+.date-dropdown-content button:hover {
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
 }
 
 .show {

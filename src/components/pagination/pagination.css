@@ -16,10 +16,16 @@
 
 .pagination-mid i {
     border: 0.5px thin rgb(211, 194, 194);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     padding: 10px 15px;
     margin: 0 40px;
 }
+
+.pagination-mid i:hover {
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
 .pagination-right {
     grid-column: 10;
 }
