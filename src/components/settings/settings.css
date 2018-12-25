@@ -1,6 +1,6 @@
 .settings {
     display: block;
-    padding: 20px;
+    padding: 20px 10px;
     overflow-x:auto;
 }
 
@@ -9,13 +9,13 @@ th {
 }
 
 th, td {
-    padding: 1%;
+    padding: 1% 0.6% 1% 0.4%;
 }
 
 table {
     border-collapse: collapse;
     border-spacing: 1em;
-    font-size: 18px;
+    font-size: 17px;
     color: #9B9B9B;
 }
 
