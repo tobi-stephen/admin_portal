@@ -48,8 +48,8 @@ class RedemptionReport extends Component {
                             </tbody>
                         </table>
                     </div>
-                </div>
                 <Pagination />
+                </div>
             </div>
         )
     }

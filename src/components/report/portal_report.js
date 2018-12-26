@@ -16,7 +16,7 @@ class PortalReport extends Component {
                 <Sidebar />
                 <div id="main-nav" className="main">
                     <Maintop screen={"Registered Customers"} />
-                    <div style={{marginTop: "2%"}}>
+                    <div className="settings">
                         <table style={{width:"100%"}}>
                             <tbody>
                                 <tr>
@@ -52,7 +52,6 @@ class PortalReport extends Component {
                     </div>
                     <Pagination />
                 </div>
-                
             </div>
         )
     }
