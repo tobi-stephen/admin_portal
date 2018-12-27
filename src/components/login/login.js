@@ -8,20 +8,6 @@ class Login extends Component{
         toHome: false,
     }
 
-    componentDidMount(){
-        let body = document.body.style
-        body.background = "url('../../assets/bg.jpg') no-repeat center center fixed";
-        body.backgroundSize = "cover"
-        body.webkitBackgroundSize = "cover"
-        body.width = "100%";
-        body.height = "auto";
-    }
-
-    componentWillUnmount(){
-        let body = document.body.style
-        body.background = "none";
-    }
-
     onsubmit = (event) => {
         event.preventDefault()
         console.log(event.target.email.value)
@@ -31,7 +17,7 @@ class Login extends Component{
 
     render(){
         return(
-            <div>
+            <div id="login-body">
             {
                 this.state.toHome ?
                 (<Redirect to={"/home"} />)
@@ -43,10 +29,10 @@ class Login extends Component{
                     </div>
                     <form onSubmit={this.onsubmit} className="login-form">
                         
-                        <label for={"email"}>Email</label>
+                        <label htmlFor={"email"}>Email</label>
                         <input type={"email"} name="email" required onInput={val => {console.log(val.target.value)}}/>
 
-                        <label for={"password"}>Password</label>
+                        <label htmlFor={"password"}>Password</label>
                         <input type={"password"} name="password" required onInput={val => {console.log(val.target.value)}}></input>
 
                         <Link to={"/"} className="forgot-password">Forgot Your Password?</Link>
