@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import { HashRouter as Router, Route, Switch} from 'react-router-dom';
+import * as serviceWorker from './dump/registerServiceWorker';
 
 //COMPONENTS
 import Login from './components/login/login';
@@ -16,7 +17,7 @@ import BIReport from './components/report/bi_report';
 
 const App = () => {
     return(
-        <BrowserRouter>
+        <Router>
             <Switch>
                 <Route exact path="/" component={Login}></Route>
                 <Route path="/home" component={Home}></Route>
@@ -30,8 +31,10 @@ const App = () => {
                 <Route path="/redemption_report" component={RedemptionReport}></Route>
                 <Route path="/BI_report" component={BIReport}></Route>
             </Switch>
-        </BrowserRouter>
+        </Router>
     )
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+serviceWorker.unregister();
