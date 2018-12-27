@@ -1,14 +1,15 @@
 {
-  "main.css": "/admin_portal/static/css/main.a8c64990.chunk.css",
-  "main.js": "/admin_portal/static/js/main.8a5a1b6d.chunk.js",
-  "main.js.map": "/admin_portal/static/js/main.8a5a1b6d.chunk.js.map",
+  "main.css": "/admin_portal/static/css/main.4381599e.chunk.css",
+  "main.js": "/admin_portal/static/js/main.1e43a1d0.chunk.js",
+  "main.js.map": "/admin_portal/static/js/main.1e43a1d0.chunk.js.map",
   "static/js/1.ac01c370.chunk.js": "/admin_portal/static/js/1.ac01c370.chunk.js",
   "static/js/1.ac01c370.chunk.js.map": "/admin_portal/static/js/1.ac01c370.chunk.js.map",
   "runtime~main.js": "/admin_portal/static/js/runtime~main.db37bca5.js",
   "runtime~main.js.map": "/admin_portal/static/js/runtime~main.db37bca5.js.map",
+  "static/css/main.4381599e.chunk.css.map": "/admin_portal/static/css/main.4381599e.chunk.css.map",
   "static/media/logo.png": "/admin_portal/static/media/logo.5a4227ed.png",
-  "static/css/main.a8c64990.chunk.css.map": "/admin_portal/static/css/main.a8c64990.chunk.css.map",
+  "static/media/login.css": "/admin_portal/static/media/bg.1a1441f4.jpg",
   "index.html": "/admin_portal/index.html",
-  "precache-manifest.01a679bb44f0114ca8e30197aa0cb606.js": "/admin_portal/precache-manifest.01a679bb44f0114ca8e30197aa0cb606.js",
+  "precache-manifest.d2989ffa119b89b6a1c2cd5def0e2f9e.js": "/admin_portal/precache-manifest.d2989ffa119b89b6a1c2cd5def0e2f9e.js",
   "service-worker.js": "/admin_portal/service-worker.js"
 }
